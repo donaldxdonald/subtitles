@@ -10,13 +10,14 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
-Video File: Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
+Audio File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
+Video File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.625000
-Active Line: 24
-Video Position: 4525
+Scroll Position: 42
+Active Line: 70
+Video Position: 12399
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -49,58 +50,53 @@ Dialogue: 0,0:02:38.00,0:02:45.00,CHS,,0,0,0,,链接或用户的链接或其他�
 Dialogue: 0,0:02:45.00,0:02:50.00,CHS,,0,0,0,,你真正想要使用的东西。 \N {\rENG} that corresponds to what you actually wantto work with.
 Dialogue: 0,0:02:50.00,0:02:59.00,CHS,,0,0,0,,ProseMirror 还支持协同编辑，因为我对未来 \N {\rENG} ProseMirror also supports collaborative editing and is generally I hope the future of in-browser
 Dialogue: 0,0:02:59.00,0:03:01.00,CHS,,0,0,0,,在浏览器上写作很有信心。 \N {\rENG} prose writing.
-Dialogue: 0,0:03:01.00,0:03:08.00,CHS,,0,0,0,,所以是的，我将会谈谈它是如何实现的，任何 \N {\rENG} So yeah I am going to be talking about how it's implemented and a major factor in any //TODO
-Dialogue: 0,0:03:08.00,0:03:17.00,CHS,,0,0,0,,类型的富文本编辑实现中的一个主要因素是名为 contentEditable 的浏览器 API。 \N {\rENG} kind of rich text editing implementation isthe browser API called contentEditable.
-Dialogue: 0,0:03:17.00,0:03:26.00,CHS,,0,0,0,,这就是使许多浏览器几乎所有浏览器内所见即所得的存在的原因，如果您 \N {\rENG} This is what enables many browser almost allin-browser WYSIWYGs to exist at all if you
-Dialogue: 0,0:03:26.00,0:03:35.00,CHS,,0,0,0,,与使用它的人交谈，您会收到抱怨和许多可怕的故事。 \N {\rENG} talk to people who have worked with it youwill get complaints and lots of horrible stories.
-Dialogue: 0,0:03:35.00,0:03:40.00,CHS,,0,0,0,,所以让我来介绍一些背景历史。 \N {\rENG} So let me give a bit of background history.
-Dialogue: 0,0:03:40.00,0:03:47.00,CHS,,0,0,0,,所以这一年是 1979 年，微软在浏览器方面进展顺利，他们只是移植了 \N {\rENG} So the year is 1979, Microsoft is on a rollwhen it comes to browser they just ported
-Dialogue: 0,0:03:47.00,0:03:53.00,CHS,,0,0,0,,JavaScript，引入了动态 DOM 操作，然后我想我真的不知道发生了什么， \N {\rENG} JavaScript, introduced dynamic DOM manipulationthen I guess I don't really know what happened
-Dialogue: 0,0:03:53.00,0:03:59.00,CHS,,0,0,0,,但假设那里有人说让我们制作我们的浏览器和编辑器，这样人们就可以 \N {\rENG} but assume someone there said let's make ourbrowser and editor so people can write HTML
-Dialogue: 0,0:03:59.00,0:04:02.00,CHS,,0,0,0,,在浏览器中编写 HTML 是一个非常值得称道的想法。 \N {\rENG} in the browser it's a very commendable idea.
-Dialogue: 0,0:04:02.00,0:04:11.00,CHS,,0,0,0,,他们最终在 IE 4 中所做的是引入了一个名为 designMode 的功能，这是 \N {\rENG} What they ended up doing in IE 4 is introducinga feature called designMode a property you
-Dialogue: 0,0:04:11.00,0:04:18.00,CHS,,0,0,0,,您在文档上设置的一个属性，它使整个文档可编辑 它的含义仍然不 \N {\rENG} set on your document which makes the wholedocument editable what it means is still not
-Dialogue: 0,0:04:18.00,0:04:25.00,CHS,,0,0,0,,完全清楚 没有涵盖此的规范你可以输入它 你可以退格 \N {\rENG} completely clear there's no spec that coversthis you can type into it you can back space
-Dialogue: 0,0:04:25.00,0:04:35.00,CHS,,0,0,0,,输出的东西和这个 API 的一个伴侣是 document.exec命令，您的脚本可以调用字符串， \N {\rENG} out stuff and a companion to this API is document.execcommand which your scripts can call string
-Dialogue: 0,0:04:35.00,0:04:44.00,CHS,,0,0,0,,如粗体或斜体或插入有序列表或删除以对文档执行其他编辑操作 \N {\rENG} like bold or italic or insert ordered listor delete to perform other editing actions
-Dialogue: 0,0:04:44.00,0:04:45.00,CHS,,0,0,0,,。 \N {\rENG} on the document.
-Dialogue: 0,0:04:45.00,0:04:54.00,CHS,,0,0,0,,自从 IE 4 以来，您可以做的是创建一个框架，将其设置为可编辑，然后绑定一些键 \N {\rENG} What you could do since IE 4 is create a frame,set to it be editable and then bind some key
-Dialogue: 0,0:04:54.00,0:05:04.00,CHS,,0,0,0,,绑定和按钮一些各种 exec 命令代码，您将拥有一个基本的 WYSIWYG 编辑器。 \N {\rENG} binding and buttons some various exec commandcodes you would have a basic WYSIWYG editor.
-Dialogue: 0,0:05:04.00,0:05:11.00,CHS,,0,0,0,,这自 1997 年以来一直有效，然后在 2000 年，他们添加了第二个非常简单的功能， \N {\rENG} This has worked since 1997, then in 2000 theyadded a second feature very simple to that
-Dialogue: 0,0:05:11.00,0:05:17.00,CHS,,0,0,0,,称为 contentEditable，这与 designMode 相同，但每个 DOM 节点而不是 \N {\rENG} called contentEditable this is the same asdesignMode but per DOM node instead of the
-Dialogue: 0,0:05:17.00,0:05:18.00,CHS,,0,0,0,,整个文档。 \N {\rENG} whole document.
-Dialogue: 0,0:05:18.00,0:05:24.00,CHS,,0,0,0,,您不必创建 iFrame，只需在现有内容中设置开关 \N {\rENG} You don't have to create an iFrame you canjust in your existing content set the switch
-Dialogue: 0,0:05:24.00,0:05:30.00,CHS,,0,0,0,,以使其可编辑，让您的用户将某些内容添加到您的页面中，然后 \N {\rENG} to make it editable to let your users addsomething to a piece of your page then save
-Dialogue: 0,0:05:30.00,0:05:33.00,CHS,,0,0,0,,以某种方式保存它。 \N {\rENG} it somehow.
-Dialogue: 0,0:05:33.00,0:05:34.00,CHS,,0,0,0,,- \N {\rENG} Other
-Dialogue: 0,0:05:34.00,0:05:40.00,CHS,,0,0,0,,自从引入此功能以来，您可以做的其他重要事情是将可编辑 \N {\rENG} important thing you could do since this featurewas introduced was set pieces of an editable
-Dialogue: 0,0:05:40.00,0:05:46.00,CHS,,0,0,0,,DOM 节点的片段设置为不可编辑，您可以将其设置回 false 以在节点内部， \N {\rENG} DOM node to be non editable you could setit back to false to be inside of the node,
-Dialogue: 0,0:05:46.00,0:05:53.00,CHS,,0,0,0,,这意味着用户可以很好地编辑文本，但他们 无法将光标移动 \N {\rENG} that means that well the users can edit textround it but they can't move their cursor
-Dialogue: 0,0:05:53.00,0:05:55.00,CHS,,0,0,0,,到该节点并在那里开始编辑。 \N {\rENG} into that node and start editing there.
-Dialogue: 0,0:05:55.00,0:06:00.00,CHS,,0,0,0,,这也是一个很大的改进，它允许您保护文档的某些部分 \N {\rENG} This is also a big improvement, it allowsyou to protect some part of your document
-Dialogue: 0,0:06:00.00,0:06:06.00,CHS,,0,0,0,,或插入不一定可编辑的小部件。 \N {\rENG} or insert widgets that are not necessarilyeditable.
-Dialogue: 0,0:06:06.00,0:06:12.00,CHS,,0,0,0,,所以，这几乎是在 JavaScript 大繁荣之前，但人们慢慢开始使用 \N {\rENG} So, this was pretty much before the big JavaScriptboom but people were slowly starting to use
-Dialogue: 0,0:06:12.00,0:06:21.00,CHS,,0,0,0,,它，在某个时候它变得非常广泛传播，我认为 2000 年代初期的 CK 编辑器 \N {\rENG} this at some point it become really wide spread,I think CK editors from the early 2000s not
-Dialogue: 0,0:06:21.00,0:06:28.00,CHS,,0,0,0,,不确定微型 MC 何时开始，他们是库重复这个和人们使用 内容管理 \N {\rENG} sure when tiny MC started they were librariesreping this and people using content management
-Dialogue: 0,0:06:28.00,0:06:30.00,CHS,,0,0,0,,系统。 \N {\rENG} systems.
-Dialogue: 0,0:06:30.00,0:06:39.00,CHS,,0,0,0,,在 Mozilla 有一种感觉，我们必须做这样的事情，这是一个有用的功能， \N {\rENG} At Mozilla there was a feeling we have todo something like this, it's a useful feature,
-Dialogue: 0,0:06:39.00,0:06:44.00,CHS,,0,0,0,,但他们不太喜欢微软所做的，这是浏览器大战，所以 \N {\rENG} but they didn't quite like what Microsofthad done, and this was the browser war so
-Dialogue: 0,0:06:44.00,0:06:50.00,CHS,,0,0,0,,没有很好的标准沟通 过程。 \N {\rENG} it was not like there was a very good communicationof standards process.
-Dialogue: 0,0:06:50.00,0:06:55.00,CHS,,0,0,0,,他们花了一些时间试图提出一个更好的解决方案，但他们从未真正就某件事达成一致 \N {\rENG} They spent sometime trying to come up witha better solution but they never really agreed
-Dialogue: 0,0:06:55.00,0:06:56.00,CHS,,0,0,0,,。 \N {\rENG} on something.
-Dialogue: 0,0:06:56.00,0:07:02.00,CHS,,0,0,0,,所以最后他们说好的，我们只做Internet Explorer 所做的事情，这样我们就不再 \N {\rENG} So in the end they said ok we'll just do whatInternet Explorer does so we're no longer
-Dialogue: 0,0:07:02.00,0:07:05.00,CHS,,0,0,0,,被排除在浏览器中的富文本编辑器之外。 \N {\rENG} left out when it comes to rich text editorin-browser.
-Dialogue: 0,0:07:05.00,0:07:12.00,CHS,,0,0,0,,所以他们复制了这个功能，当然它并没有完全复制它，他们的某些 \N {\rENG} So they copied this feature, of course itdidn't exactly copy it they some parts of
-Dialogue: 0,0:07:12.00,0:07:17.00,CHS,,0,0,0,,部分没有用，他们忽略了这些部分，他们认为他们知道其他部分的更好解决方案 \N {\rENG} it were no use they left those out, they thoughtthey knew better solutions for some other
-Dialogue: 0,0:07:17.00,0:07:23.00,CHS,,0,0,0,,，例如，如果你加粗一些，IE 会添加文本，他们说不，我们上面 \N {\rENG} parts for example where IE would add textif you made something bold, they said no we
+Dialogue: 0,0:03:01.70,0:03:05.70,CHS,,0,0,0,,所以是的，我将会谈谈它是如何实现的 \N {\rENG} So yeah I am going to be talking about how it's implemented
+Dialogue: 0,0:03:06.00,0:03:17.00,CHS,,0,0,0,,大部分的富文本编辑器实现的一个主要因素是名为 contentEditable 的浏览器 API。 \N {\rENG}a major factor in any kind of rich text editing implementation is the browser API called contentEditable.
+Dialogue: 0,0:03:17.00,0:03:25.42,CHS,,0,0,0,,这是许多浏览器的所见即所得编辑器存在的原因 \N {\rENG} This is what enables many browser almost or in-browser WYSIWYGs to exist at all
+Dialogue: 0,0:03:25.60,0:03:35.00,CHS,,0,0,0,,如果您与使用它的人交谈，您会听到抱怨和许多可怕的故事 \N {\rENG} If you talk to people who have worked with it you will get complaints and lots of horrible stories
+Dialogue: 0,0:03:35.00,0:03:40.00,CHS,,0,0,0,,那么让我来介绍一些背景历史 \N {\rENG} So let me give a bit of background history
+Dialogue: 0,0:03:40.00,0:03:47.00,CHS,,0,0,0,,这一年是 1979 年，微软在浏览器方面进展顺利，他们只是移植了 \N {\rENG} The year is 1979, Microsoft is on a roll when it comes to browser they just ported
+Dialogue: 0,0:03:47.00,0:03:53.00,CHS,,0,0,0,,JavaScript，引入了动态 DOM 操作，然后我真的不知道发生了什么 \N {\rENG} JavaScript, introduced dynamic DOM manipulation. And then I guess I don't really know what happened
+Dialogue: 0,0:03:53.00,0:03:59.00,CHS,,0,0,0,,但假设那时有人说让我们制作我们的浏览器和编辑器，这样人们就可以 \N {\rENG} but assume someone there said let's make our browser and editor so people can write HTML
+Dialogue: 0,0:03:59.00,0:04:03.84,CHS,,0,0,0,,在浏览器中编写 HTML 。这是一个非常值得称道的想法。 \N {\rENG} in the browser. And this is a very commendable idea definitely
+Dialogue: 0,0:04:04.32,0:04:10.16,CHS,,0,0,0,,他们最终在 IE 4 中所做的是引入了一个名为 designMode 的功能 \N {\rENG} What they ended up doing in IE 4 is introducing a feature called designMode
+Dialogue: 0,0:04:10.38,0:04:15.50,CHS,,0,0,0,,这是在 document 上设置的一个属性，它使整个文档可编辑 \N {\rENG} It's a property you set on your document which makes the whole document editable 
+Dialogue: 0,0:04:16.58,0:04:21.26,CHS,,0,0,0,,但是它的含义仍然不是很清楚， 没有涵盖此属性的规范你可以输入它 你可以退格 \N {\rENG} But what it means is still not clear. there's no spec that covers this you can type into it you can back space
+Dialogue: 0,0:04:21.26,0:04:25.94,CHS,,0,0,0,,基本上，你会得到一个光标和一个选区，你可以在其中打字，可以退格\N {\rENG} Basically you get a cursor and a selection and you can type into it you can back space
+Dialogue: 0,0:04:26.60,0:04:34.30,CHS,,0,0,0,,和这个 API 的搭配的是 document.execCommand，您的脚本可以将字符串 \N {\rENG} And a companion to this API is document.execCommand which your scripts can parse string
+Dialogue: 0,0:04:34.64,0:04:45.18,CHS,,0,0,0,,转变为粗体、斜体或插入、删除有序列表或者对文档执行其他编辑操作 \N {\rENG} like bold or italic or insert ordered listor delete to perform other editing actions on the document
+Dialogue: 0,0:04:45.52,0:04:54.00,CHS,,0,0,0,,自从 IE 4 以来，您可以做的是建立一个框架，将其设置为可编辑 \N {\rENG} What you could do since IE 4 is create a frame, set it to be editable
+Dialogue: 0,0:04:54.00,0:05:04.00,CHS,,0,0,0,,然后绑定一些按键和按钮，以及各种执行命令代码，你就会有一个基本的所见即所得的编辑器 \N {\rENG}  And then bind some key binding and buttons some various exec command codes you would have a basic WYSIWYG editor
+Dialogue: 0,0:05:04.00,0:05:11.00,CHS,,0,0,0,,这自 1997 年以来一直有效，然后在 2000 年，他们添加了第二个与之很像的功能， \N {\rENG} This has worked since 1997, then in 2000 they added a second feature very similar to that
+Dialogue: 0,0:05:11.00,0:05:18.00,CHS,,0,0,0,,称为 contentEditable，和 designMode 一样，但针对的是每个 DOM 节点而不是整个文档 \N {\rENG} called contentEditable. This is the same as designMode but per DOM node instead of the whole document
+Dialogue: 0,0:05:18.00,0:05:24.00,CHS,,0,0,0,,意味着您不必创建 iFrame，只需在现有内容中设置开关 \N {\rENG} Meaning you don't have to create an iFrame. You can just in your existing content set the switch
+Dialogue: 0,0:05:24.00,0:05:31.20,CHS,,0,0,0,,以使其可编辑，让您的用户将某些内容添加到您的页面中，然后以某种方式保存它 \N {\rENG} to make it editable to let your users add something to a piece of your page then save it somehow
+Dialogue: 0,0:05:33.00,0:05:40.00,CHS,,0,0,0,,自从引入此功能以来，您还可以做的是将可编辑 \N {\rENG} Other important thing you could do since this feature was introduced was set pieces of an editable
+Dialogue: 0,0:05:40.00,0:05:46.00,CHS,,0,0,0,,DOM 节点的一部分设置为不可编辑，您可以在节点内部将其设置回 false  \N {\rENG} DOM node to be non editable you could set it back to false to be inside of the node,
+Dialogue: 0,0:05:46.00,0:05:53.00,CHS,,0,0,0,,这意味着用户可以很好地编辑文本，但他们无法将光标移动 \N {\rENG} that means that well the users can edit text round it but they can't move their cursor
+Dialogue: 0,0:05:53.00,0:05:55.00,CHS,,0,0,0,,到该节点并在那里开始编辑 \N {\rENG} into that node and start editing there
+Dialogue: 0,0:05:55.00,0:06:00.00,CHS,,0,0,0,,这也是一个很大的改进，它允许您保护文档的某些部分 \N {\rENG} This is also a big improvement, it allows you to protect some part of your document
+Dialogue: 0,0:06:00.00,0:06:06.00,CHS,,0,0,0,,或插入不一定可编辑的小部件 \N {\rENG} or insert widgets that are not necessarily editable
+Dialogue: 0,0:06:06.00,0:06:12.00,CHS,,0,0,0,,所以，这几乎是在 JavaScript 大繁荣之前的事了，人们慢慢开始使用它 \N {\rENG} So, this was pretty much before the big JavaScript boom but people were slowly starting to use
+Dialogue: 0,0:06:12.00,0:06:21.00,CHS,,0,0,0,,但在某个时候它变得非常广泛传播，CKEditor 应该是 2000 年代初期的 \N {\rENG} this at some point it become really wide spread, I think CKEditor is from the early 2000s
+Dialogue: 0,0:06:21.00,0:06:29.20,CHS,,0,0,0,,不确定 TinyMCE 何时开始，有一些使用这个 API 的库，人们会在内容管理系统中使用它们 \N {\rENG} not sure when TinyMCE started. There were libraries reping this and people using this to CMS
+Dialogue: 0,0:06:29.60,0:06:39.00,CHS,,0,0,0,,在 Mozilla ，我们有一种感觉，认为必须做这样的事情，这是一个有用的功能 \N {\rENG} At Mozilla there was a feeling we have todo something like this, it's a useful feature
+Dialogue: 0,0:06:39.00,0:06:44.00,CHS,,0,0,0,,但他们不太喜欢微软所做的，这是浏览器大战，所以 \N {\rENG} but they didn't quite like what Microsoft had done, and this was the browser war so
+Dialogue: 0,0:06:44.00,0:06:50.00,CHS,,0,0,0,,没有很好的标准规范沟通过程 \N {\rENG} it was not like there was a very good communication of standards process
+Dialogue: 0,0:06:50.00,0:06:56.20,CHS,,0,0,0,,他们花了一些时间试图提出一个更好的解决方案，但他们从未真正就某件事达成一致 \N {\rENG} They spent sometime trying to come up witha better solution but they never really agreed on something
+Dialogue: 0,0:06:56.54,0:07:02.00,CHS,,0,0,0,,所以最后他们说"好的"，我们只做了 Internet Explorer 所做的事情，这样我们就不再 \N {\rENG} So in the end they said ok we'll just do what Internet Explorer does so we're no longer
+Dialogue: 0,0:07:02.00,0:07:06.80,CHS,,0,0,0,,被排除在浏览器富文本编辑器之外 \N {\rENG} left out when it comes to rich text editor in browser with text editing
+Dialogue: 0,0:07:07.18,0:07:12.00,CHS,,0,0,0,,所以他们复制了这个功能，当然并没有完全复制它，他们的某些 \N {\rENG} So they copied this feature, of course it didn't exactly copy it they some parts of
+Dialogue: 0,0:07:12.00,0:07:17.00,CHS,,0,0,0,,部分没有用，他们忽略了这些部分，他们认为他们知道其他部分的更好解决方案 \N {\rENG} it were no use they left those out, they thought they knew better solutions for some other
+Dialogue: 0,0:07:17.00,0:07:23.00,CHS,,0,0,0,,例如，如果你将文字加粗，IE 会添加（听不清）文本，他们说不，我们上面 \N {\rENG} parts for example where IE would add &*% text if you made something bold, they said no we
 Dialogue: 0,0:07:23.00,0:07:27.00,CHS,,0,0,0,,有字体宽度的 CSS。 \N {\rENG} have CSS that font width on them.
-Dialogue: 0,0:07:27.00,0:07:38.00,CHS,,0,0,0,,IE 在当时和几年后的两个主要浏览器上都有该功能，实际上 \N {\rENG} IE had the feature on both major browsersthen and a few years later, actually took
-Dialogue: 0,0:07:38.00,0:07:47.00,CHS,,0,0,0,,直到 2007 年，在 JavaScript 热潮之后，Firefox 也添加了对 contentEditable 的支持， \N {\rENG} until 2007 which is past the JavaScript boomthat Firefox also added support for contentEditable,
-Dialogue: 0,0:07:47.00,0:07:54.00,CHS,,0,0,0,,然后其他浏览器 Safari、Chrome、Opera 也都采用了该功能 并以 \N {\rENG} and then the other browsers Safari, Chrome,Opera, all also took up the feature and implemented
-Dialogue: 0,0:07:54.00,0:08:02.00,CHS,,0,0,0,,一种或另一种方式实现它，现在它被认为是现代图形浏览器中预期 API 的一部分 \N {\rENG} it one way or another and now it's kind ofconsidered part of the expected API in a modern
-Dialogue: 0,0:08:02.00,0:08:07.00,CHS,,0,0,0,,。 \N {\rENG} graphical browser.
+Dialogue: 0,0:07:27.50,0:07:30.24,CHS,,0,0,0,,我也不清楚为啥  \N {\rENG} I'm not sure why
+Dialogue: 0,0:07:32.58,0:07:38.00,CHS,,0,0,0,,在当时两个主要浏览器上都有该功能 \N {\rENG} You had the feature on both major browsers then and a few years later
+Dialogue: 0,0:07:38.00,0:07:47.00,CHS,,0,0,0,,直到 2007 年，在 JavaScript 热潮之后，Firefox 也添加了对 contentEditable 的支持 \N {\rENG} actually took until 2007 which is past the JavaScript boom that Firefox also added support for contentEditable
+Dialogue: 0,0:07:47.00,0:07:54.00,CHS,,0,0,0,,然后其他浏览器 Safari、Chrome、Opera 也都采用了该功能 \N {\rENG} and then the other browsers Safari, Chrome, Opera, all also took up the feature
+Dialogue: 0,0:07:54.00,0:08:03.20,CHS,,0,0,0,,并以一种或另一种方式实现它，现在它被认为是现代图形浏览器中预期 API 的一部分 \N {\rENG} and implemented it one way or another. And now it's kind of considered part of the expected API in a modern graphical browser
 Dialogue: 0,0:08:07.00,0:08:11.00,CHS,,0,0,0,,那么为什么这是一件好事呢？ \N {\rENG} So why is this a good thing?
-Dialogue: 0,0:08:11.00,0:08:16.00,CHS,,0,0,0,,我们必须在浏览器中实现编辑的其他控件是文本区域和文本 \N {\rENG} The other controls that we have to implementediting in a browser are text area and text
+Dialogue: 0,0:08:11.00,0:08:16.00,CHS,,0,0,0,,我们必须在浏览器中实现编辑的其他控件是文本区域和文本 \N {\rENG} The other controls that we have to implementediting in a browser are text area and text \\TODO
 Dialogue: 0,0:08:16.00,0:08:17.00,CHS,,0,0,0,,输入。 \N {\rENG} input.
 Dialogue: 0,0:08:17.00,0:08:25.00,CHS,,0,0,0,,两者都受限于纯文本的原子块，你不能真正做很多 \N {\rENG} Both of which are constrained to atomic blobsof plain text you can't really do many of
 Dialogue: 0,0:08:25.00,0:08:31.00,CHS,,0,0,0,,你想用它们做的事情，比如在其中做富文本是一个非首发，甚至 \N {\rENG} the things you want to do with them like doingrich text in them is a non starter and even
