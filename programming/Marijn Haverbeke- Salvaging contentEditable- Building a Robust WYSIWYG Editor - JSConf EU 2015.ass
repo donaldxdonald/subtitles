@@ -14,10 +14,10 @@ Audio File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Bui
 Video File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.625000
-Scroll Position: 42
-Active Line: 70
-Video Position: 12399
+Video Zoom Percent: 0.750000
+Scroll Position: 105
+Active Line: 115
+Video Position: 19425
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -60,7 +60,7 @@ Dialogue: 0,0:03:47.00,0:03:53.00,CHS,,0,0,0,,JavaScript，引入了动态 DOM �
 Dialogue: 0,0:03:53.00,0:03:59.00,CHS,,0,0,0,,但假设那时有人说让我们制作我们的浏览器和编辑器，这样人们就可以 \N {\rENG} but assume someone there said let's make our browser and editor so people can write HTML
 Dialogue: 0,0:03:59.00,0:04:03.84,CHS,,0,0,0,,在浏览器中编写 HTML 。这是一个非常值得称道的想法。 \N {\rENG} in the browser. And this is a very commendable idea definitely
 Dialogue: 0,0:04:04.32,0:04:10.16,CHS,,0,0,0,,他们最终在 IE 4 中所做的是引入了一个名为 designMode 的功能 \N {\rENG} What they ended up doing in IE 4 is introducing a feature called designMode
-Dialogue: 0,0:04:10.38,0:04:15.50,CHS,,0,0,0,,这是在 document 上设置的一个属性，它使整个文档可编辑 \N {\rENG} It's a property you set on your document which makes the whole document editable 
+Dialogue: 0,0:04:10.38,0:04:15.50,CHS,,0,0,0,,这是在 document 上设置的一个属性，它使整个文档可编辑 \N {\rENG} It's a property you set on your document which makes the whole document editable
 Dialogue: 0,0:04:16.58,0:04:21.26,CHS,,0,0,0,,但是它的含义仍然不是很清楚， 没有涵盖此属性的规范你可以输入它 你可以退格 \N {\rENG} But what it means is still not clear. there's no spec that covers this you can type into it you can back space
 Dialogue: 0,0:04:21.26,0:04:25.94,CHS,,0,0,0,,基本上，你会得到一个光标和一个选区，你可以在其中打字，可以退格\N {\rENG} Basically you get a cursor and a selection and you can type into it you can back space
 Dialogue: 0,0:04:26.60,0:04:34.30,CHS,,0,0,0,,和这个 API 的搭配的是 document.execCommand，您的脚本可以将字符串 \N {\rENG} And a companion to this API is document.execCommand which your scripts can parse string
@@ -96,56 +96,52 @@ Dialogue: 0,0:07:38.00,0:07:47.00,CHS,,0,0,0,,直到 2007 年，在 JavaScript �
 Dialogue: 0,0:07:47.00,0:07:54.00,CHS,,0,0,0,,然后其他浏览器 Safari、Chrome、Opera 也都采用了该功能 \N {\rENG} and then the other browsers Safari, Chrome, Opera, all also took up the feature
 Dialogue: 0,0:07:54.00,0:08:03.20,CHS,,0,0,0,,并以一种或另一种方式实现它，现在它被认为是现代图形浏览器中预期 API 的一部分 \N {\rENG} and implemented it one way or another. And now it's kind of considered part of the expected API in a modern graphical browser
 Dialogue: 0,0:08:07.00,0:08:11.00,CHS,,0,0,0,,那么为什么这是一件好事呢？ \N {\rENG} So why is this a good thing?
-Dialogue: 0,0:08:11.00,0:08:16.00,CHS,,0,0,0,,我们必须在浏览器中实现编辑的其他控件是文本区域和文本 \N {\rENG} The other controls that we have to implementediting in a browser are text area and text \\TODO
-Dialogue: 0,0:08:16.00,0:08:17.00,CHS,,0,0,0,,输入。 \N {\rENG} input.
-Dialogue: 0,0:08:17.00,0:08:25.00,CHS,,0,0,0,,两者都受限于纯文本的原子块，你不能真正做很多 \N {\rENG} Both of which are constrained to atomic blobsof plain text you can't really do many of
-Dialogue: 0,0:08:25.00,0:08:31.00,CHS,,0,0,0,,你想用它们做的事情，比如在其中做富文本是一个非首发，甚至 \N {\rENG} the things you want to do with them like doingrich text in them is a non starter and even
-Dialogue: 0,0:08:31.00,0:08:36.00,CHS,,0,0,0,,添加一些有用的小部件或语法突出显示几乎是不可能的 在文本区域顶部执行 \N {\rENG} adding some helpful widgets or syntax highlightingis almost impossible to do on top of text
-Dialogue: 0,0:08:36.00,0:08:39.00,CHS,,0,0,0,,。 \N {\rENG} area.
-Dialogue: 0,0:08:39.00,0:08:45.00,CHS,,0,0,0,,所以很好的是，我们有一个替代方案，我们可以在浏览器中进行可靠的富文本编辑 \N {\rENG} So it's great then we have an alternativethat we can do solid rich text editing or
+Dialogue: 0,0:08:11.00,0:08:17.06,CHS,,0,0,0,,我们必须在浏览器中实现编辑的其他控件是 textarea 和 input \N {\rENG} The other controls that we have to implement editing in a browser are textarea and text input
+Dialogue: 0,0:08:17.40,0:08:25.00,CHS,,0,0,0,,两者都受限于纯文本的原子块，你不能真正做很多 \N {\rENG} Both of which are constrained to atomic blobs of plain text you can't really do many of
+Dialogue: 0,0:08:25.00,0:08:31.00,CHS,,0,0,0,,你想用它们做的事情，比如在其中做富文本，是不可能的 \N {\rENG} the things you want to do with them like doing rich text in them is a non starter
+Dialogue: 0,0:08:31.00,0:08:37.32,CHS,,0,0,0,,甚至添加一些有用的小部件或者在文本上做语法高亮几乎是不可能的  \N {\rENG}  even adding some helpful widgets or syntax highlighting is almost impossible to do on top of textarea
+Dialogue: 0,0:08:39.00,0:08:45.00,CHS,,0,0,0,,所以很好的是，我们有一个替代方案，可以在浏览器中进行可靠的富文本编辑 \N {\rENG} So it's great then we have an alternative that we can do solid rich text editing or
 Dialogue: 0,0:08:45.00,0:08:51.00,CHS,,0,0,0,,或或多或少可靠的富文本编辑，例如 \N {\rENG} more or less solid rich text editing in abrowser, things like content management systems
-Dialogue: 0,0:08:51.00,0:08:59.00,CHS,,0,0,0,,完全在线存在的内容管理系统，早期的代码编辑器也基于此。 \N {\rENG} that exist entirely online, earlier code editorswere also based on this.
+Dialogue: 0,0:08:51.00,0:08:59.00,CHS,,0,0,0,,完全线上的内容管理系统，早期的代码编辑器也基于此。 \N {\rENG} that exist entirely online, earlier code editors were also based on this.
 Dialogue: 0,0:08:59.00,0:09:02.00,CHS,,0,0,0,,这太棒了。 \N {\rENG} This is wonderful.
-Dialogue: 0,0:09:02.00,0:09:14.00,CHS,,0,0,0,,当然，除了它有问题之外，HTML 范围并不大，你可能 \N {\rENG} Except of course, it has problems a majorthing HTML scope is not gigantic, you might
-Dialogue: 0,0:09:14.00,0:09:25.00,CHS,,0,0,0,,不想要整个范围，例如，CodeMirror 的第一个版本基于 contentEditable \N {\rENG} not want that whole scope for example, firstversion of CodeMirror it was based on contentEditable
-Dialogue: 0,0:09:25.00,0:09:31.00,CHS,,0,0,0,,图像将整个表格链接到编辑器中，我不得不以某种方式处理这个问题。 \N {\rENG} images links whole tables into the editorI had to somehow deal with this.
-Dialogue: 0,0:09:31.00,0:09:38.00,CHS,,0,0,0,,所以你可以过滤内容，无论如何你都想过滤内容， \N {\rENG} So you can do that you can filter content,you properly want to filter the content anyway,
+Dialogue: 0,0:09:02.00,0:09:14.00,CHS,,0,0,0,,当然，它也有问题，一个主要的问题是 HTML 范围很大，你可能 \N {\rENG} Except of course, it has problems. A major thing is that HTML scope is gigantic, you might
+Dialogue: 0,0:09:14.00,0:09:25.00,CHS,,0,0,0,,不想要整个范围，例如，CodeMirror 的第一个版本基于 contentEditable \N {\rENG} not want that whole scope for example, first version of CodeMirror it was based on contentEditable
+Dialogue: 0,0:09:25.00,0:09:31.00,CHS,,0,0,0,,图像将整个表格链接到编辑器中，我不得不以某种方式处理这个问题。 \N {\rENG} images links whole tables into the editor and I had to somehow deal with this.
+Dialogue: 0,0:09:31.00,0:09:38.00,CHS,,0,0,0,,所以你可以过滤内容，无论如何你都想过滤内容， \N {\rENG} So you can do that you can filter content, you properly want to filter the content anyway,
 Dialogue: 0,0:09:38.00,0:09:44.00,CHS,,0,0,0,,默认情况下它就是这样出来的，非常非常难看。 \N {\rENG} it comes out of this by default, it's very,very ugly.
-Dialogue: 0,0:09:44.00,0:09:52.00,CHS,,0,0,0,,因此，现代 WYSIWYG 浏览器具有相当先进的机制来清除 \N {\rENG} So that modern WYSIWYG browsers have prettyadvanced mechanisms for cleaning out the HTML
-Dialogue: 0,0:09:52.00,0:09:59.00,CHS,,0,0,0,,编辑器内部的 HTML，但是仍然存在所有浏览器差异， \N {\rENG} inside of the editor, but then there's stillall the browser differences, there's no spec,
+Dialogue: 0,0:09:44.00,0:09:52.00,CHS,,0,0,0,,因此，现代 WYSIWYG 浏览器具有相当先进的机制来清除 \N {\rENG} So that modern WYSIWYG browsers have pretty advanced mechanisms for filtering cleaning out the HTML
+Dialogue: 0,0:09:52.00,0:09:59.00,CHS,,0,0,0,,编辑器内部的 HTML，但是仍然存在所有浏览器差异， \N {\rENG} inside of the editor, but then there's still all the browser differences, there's no spec,
 Dialogue: 0,0:09:59.00,0:10:01.00,CHS,,0,0,0,,每个浏览器都没有规范。 \N {\rENG} each browser.
-Dialogue: 0,0:10:01.00,0:10:07.00,CHS,,0,0,0,,这是编辑 HTML 真正含义的一个非常大的范围，光标在 \N {\rENG} This is a very big scope of what editing HTMLreally means, there's cursor motion through
-Dialogue: 0,0:10:07.00,0:10:13.00,CHS,,0,0,0,,表格中移动，向表格中添加列，当您在定义列表中显示输入时会发生 \N {\rENG} tables, adding columns to table, what happenswhen you present enter in a definition list,
+Dialogue: 0,0:10:01.00,0:10:07.00,CHS,,0,0,0,,这就是编辑 HTML 是一个非常大的范围的意思，光标在 \N {\rENG} This is a very big scope of what editing HTML really means, there's cursor motion through
+Dialogue: 0,0:10:07.00,0:10:13.00,CHS,,0,0,0,,表格中移动，向表格中添加列，当您在定义列表中显示输入时会发生 \N {\rENG} tables, adding columns to table, what happens when you present enter in a definition list,
 Dialogue: 0,0:10:13.00,0:10:18.00,CHS,,0,0,0,,什么，如果光标跨块元素的边界移动，光标位置到底是什么， \N {\rENG} what exactly is the cursor position if it'smoving across the boundaries of block elements,
 Dialogue: 0,0:10:18.00,0:10:19.00,CHS,,0,0,0,,什么是有效的光标位置。 \N {\rENG} what is a valid cursor position.
-Dialogue: 0,0:10:19.00,0:10:27.00,CHS,,0,0,0,,这些都是有效的问题，他们给出的答案略有不同。 \N {\rENG} These are all valid questions, they came upwith slightly different answers to them.
+Dialogue: 0,0:10:19.00,0:10:27.00,CHS,,0,0,0,,这些都是很难回答的问题，他们给出的答案略有不同。 \N {\rENG} These are all difficult questions, they came upwith slightly different answers to them.
 Dialogue: 0,0:10:27.00,0:10:29.00,CHS,,0,0,0,,然后是错误。 \N {\rENG} Then there's bugs.
-Dialogue: 0,0:10:29.00,0:10:30.00,CHS,,0,0,0,,许多 \N {\rENG} Many
-Dialogue: 0,0:10:30.00,0:10:31.00,CHS,,0,0,0,,错误。 \N {\rENG} bugs.
-Dialogue: 0,0:10:31.00,0:10:36.00,CHS,,0,0,0,,我得到的感觉是，除了少数启动 \N {\rENG} The feeling I get is that no-one really maybeexcept for the few engineers that started
-Dialogue: 0,0:10:36.00,0:10:41.00,CHS,,0,0,0,,这个东西的工程师之外，没有人真的可能想要实现这个，但这是需要和 \N {\rENG} this thing, no-one really felt like implementingthis but it was something that is needed and
-Dialogue: 0,0:10:41.00,0:10:47.00,CHS,,0,0,0,,预期的东西，所以所有浏览器供应商都不得不以某种方式宣传这条龙 一个子浏览 \N {\rENG} expected and so all the browser vendors hadto somehow ad this dragon of a sub browser
-Dialogue: 0,0:10:47.00,0:10:54.00,CHS,,0,0,0,,器以各种可怕的方式与所有东西交互，多年来一直存在语言错误和错误 \N {\rENG} that interacted with everything in all kindsof horrible ways, bugs with language and bug
+Dialogue: 0,0:10:29.00,0:10:30.10,CHS,,0,0,0,,许多错误 \N {\rENG} Many bugs
+Dialogue: 0,0:10:31.00,0:10:36.00,CHS,,0,0,0,,我得到的感觉是，除了少数开发这个东西的工程师外 \N {\rENG} The feeling I get is that no-one really maybe except for the few engineers that started this thing
+Dialogue: 0,0:10:36.00,0:10:41.00,CHS,,0,0,0,,没有人真的可能想要实现这个，但这是被需要和期待的东西 \N {\rENG} no-one really felt like implementing this but it was something that is needed and expected
+Dialogue: 0,0:10:41.00,0:10:47.00,CHS,,0,0,0,,所以所有浏览器供应商都不得不以某种方式在浏览器的一个子模块中加入这条巨龙 \N {\rENG} so all the browser vendors had to somehow add this dragon of a sub module into browser
+Dialogue: 0,0:10:47.00,0:10:54.00,CHS,,0,0,0,,这东西以各种可怕的方式与所有东西交互，多年来一直存在语言错误和错误 \N {\rENG} with interacted with everything in all kinds of horrible ways, bugs with language and bug
 Dialogue: 0,0:10:54.00,0:11:00.00,CHS,,0,0,0,,跟踪器，似乎没有人真正关心那么多。 \N {\rENG} trackers for years an years it seems no-onereally cared all that much.
-Dialogue: 0,0:11:00.00,0:11:06.00,CHS,,0,0,0,,这种情况最近有所改善，目前在现代浏览器上，您确实可以 \N {\rENG} The situation has recently improved, currentlyon modern browsers you can really make some
-Dialogue: 0,0:11:06.00,0:11:11.00,CHS,,0,0,0,,对用户编辑 HTML 时会发生什么做出一些假设，以前 \N {\rENG} assumptions about what is going to happento your HTML as the user is editing it, didn't
-Dialogue: 0,0:11:11.00,0:11:17.00,CHS,,0,0,0,,在 CodeMirror 1 中并非如此，我只是一堆堆 \N {\rENG} used to be the case in CodeMirror 1, I havejust piles and piles of workarounds to deal
-Dialogue: 0,0:11:17.00,0:11:19.00,CHS,,0,0,0,,解决所有这些奇怪问题的解决方法。 \N {\rENG} with all these weird issues.
+Dialogue: 0,0:11:00.00,0:11:06.00,CHS,,0,0,0,,这种情况最近有所改善，目前在现代浏览器上，您确实可以 \N {\rENG} The situation has recently improved, currently on modern browsers you can really make some
+Dialogue: 0,0:11:06.00,0:11:11.00,CHS,,0,0,0,,对用户编辑 HTML 时会发生什么做出一些假设，以前 \N {\rENG} assumptions about what is going to happen to your HTML as the user is editing it, didn't
+Dialogue: 0,0:11:11.00,0:11:17.00,CHS,,0,0,0,,在 CodeMirror 1 中并非如此，我只是一点一点地 \N {\rENG} used to be the case in CodeMirror 1, I have just piles and piles of workarounds to deal
+Dialogue: 0,0:11:17.00,0:11:19.00,CHS,,0,0,0,,解决所有这些奇怪的问题 \N {\rENG} with all these weird issues
 Dialogue: 0,0:11:19.00,0:11:27.00,CHS,,0,0,0,,它只是一个文本编辑器，如果你真的支持丰富的内容，那就更糟了。 \N {\rENG} It was only a text editor, it will be a lotworse if you actually support rich content.
-Dialogue: 0,0:11:27.00,0:11:36.00,CHS,,0,0,0,,所以，人们对此真的很恼火，然后有一代编辑， \N {\rENG} So, people really got annoyed with this andthen there is a generation of editors, it
-Dialogue: 0,0:11:36.00,0:11:43.00,CHS,,0,0,0,,从代码编辑开始，他们只是说，“好吧，我们根本不打算碰这个，我们会 \N {\rENG} started with code editors, who just say, "Ok,we're not going to touch this at all, we'll
-Dialogue: 0,0:11:43.00,0:11:50.00,CHS,,0,0,0,,自己想办法，我们 实现一切，所以我们实现了我们自己的选择， \N {\rENG} figure something out ourselves, we implementeverything, so we implement our own selection,
-Dialogue: 0,0:11:50.00,0:11:56.00,CHS,,0,0,0,,只是 DOM 实际上是不可编辑的，我们通过捕获事件并更改 \N {\rENG} just the DOM is not actually editable, wepretend it is by capturing events and changing
-Dialogue: 0,0:11:56.00,0:12:04.00,CHS,,0,0,0,,您在屏幕上看到的文档来响应这些事件来假装它是可编辑的。” \N {\rENG} your documents you see on the screen in responseto these events."
-Dialogue: 0,0:12:04.00,0:12:11.00,CHS,,0,0,0,,第一个实现这一点的是 Ace代码编辑器，那时我还在 \N {\rENG} The first one to pull this off was the Acecode editor at that point I was still messing
-Dialogue: 0,0:12:11.00,0:12:18.00,CHS,,0,0,0,,自己的代码编辑中搞乱 contentEditable，我认为这显然更优越， \N {\rENG} about with contentEditable in my own codeediting, I thought ok this is clearly superior,
-Dialogue: 0,0:12:18.00,0:12:24.00,CHS,,0,0,0,,我只是放弃了内容编辑器，再也没有回去。 \N {\rENG} I just dropped content editor and never wentback.
-Dialogue: 0,0:12:24.00,0:12:32.00,CHS,,0,0,0,,谷歌文档，使用这个，你看到的绿色闪烁是一个隐藏并定期显示的小 gif \N {\rENG} Google docs, uses this, what you see blinkingon the green is a little gif that's hidden
-Dialogue: 0,0:12:32.00,0:12:40.00,CHS,,0,0,0,,，你可以很远，在桌面浏览器上，你可以使用这种技术获得良好的编辑 \N {\rENG} and shown periodically, you can very far,on desk top browsers you can get a good editing
-Dialogue: 0,0:12:40.00,0:12:45.00,CHS,,0,0,0,,体验。 \N {\rENG} experience using this technique.
-Dialogue: 0,0:12:45.00,0:12:51.00,CHS,,0,0,0,,在某些时候你确实会遇到问题，如果你完全保持自己的选择， \N {\rENG} At some point you do run into problems, ifyou maintain your own selection entirely,
-Dialogue: 0,0:12:51.00,0:12:57.00,CHS,,0,0,0,,你会得到你盘子上双向文本的所有复杂性，你必须 \N {\rENG} you get all the complexity of bi directionaltext on your plate you have to implement what
-Dialogue: 0,0:12:57.00,0:13:02.00,CHS,,0,0,0,,实现光标应该做的事情，如果它从右到左移动，那么 输入从左到右的 \N {\rENG} the cursor is supposed to be doing, if itmoves right to left, then enters left to right
+Dialogue: 0,0:11:27.00,0:11:36.00,CHS,,0,0,0,,所以，人们对此真的很恼火，然后有了一代编辑器， \N {\rENG} So, people really got annoyed with this and then there is a generation of editors
+Dialogue: 0,0:11:36.00,0:11:43.00,CHS,,0,0,0,,从代码编辑开始，他们只是说，“好吧，我们根本不打算碰这个，我们会 \N {\rENG} it started with code editors, who just say, "OK, we're not going to touch this at all, we'll
+Dialogue: 0,0:11:43.00,0:11:50.00,CHS,,0,0,0,,自己想办法，我们自己实现一切，所以我们实现了自己的选区 \N {\rENG} figure something out ourselves, we implement everything, so we implement our own selection
+Dialogue: 0,0:11:50.00,0:11:56.00,CHS,,0,0,0,,只是 DOM 实际上是不可编辑的，我们通过捕获事件并更改 \N {\rENG} just the DOM is not actually editable, we pretend it is by capturing events and changing
+Dialogue: 0,0:11:56.00,0:12:04.00,CHS,,0,0,0,,您在屏幕上看到的文档来响应这些事件来假装它是可编辑的 \N {\rENG} your documents you see on the screen in response to these events
+Dialogue: 0,0:12:04.00,0:12:11.00,CHS,,0,0,0,,第一个实现这一点的是 Ace 代码编辑器，那时我还在 \N {\rENG} The first one to pull this off was the Ace code editor at that point I was still messing
+Dialogue: 0,0:12:11.00,0:12:18.00,CHS,,0,0,0,,自己的代码编辑器中捣鼓 contentEditable，我认为这显然更优越， \N {\rENG} about with contentEditable in my own code editor, I thought ok this is clearly superior,
+Dialogue: 0,0:12:18.00,0:12:23.04,CHS,,0,0,0,,我只是放弃了内容编辑器，再也没有回去。 \N {\rENG} I just dropped content editor and never went back.
+Dialogue: 0,0:12:24.00,0:12:32.00,CHS,,0,0,0,,那个方法谷歌文档也有使用，你看到的闪烁光标是一个隐藏并定期显示的小 gif 图\N {\rENG} That works, Google docs,also used this approach, what you see blinking on the screen is a little gif that's hidden and shown periodically
+Dialogue: 0,0:12:36.18,0:12:42.82,CHS,,0,0,0,,你可以得到非常快的速度，特别是在桌面浏览器上，你可以使用这种技术获得良好的编辑体验 \N {\rENG} you can get really fast, especially on desktop browsers you can get a good editing experience using this technique
+Dialogue: 0,0:12:45.00,0:12:51.00,CHS,,0,0,0,,在某些时候你确实会遇到问题，如果你完全保持自己的选区， \N {\rENG} At some point you do run into problems, if you maintain your own selection entirely,
+Dialogue: 0,0:12:51.00,0:12:57.00,CHS,,0,0,0,,你会遇到双向文本的所有复杂性，你必须 \N {\rENG} you get all the complexity of bidirectional text on your plate you have to implement what
+Dialogue: 0,0:12:57.00,0:13:02.00,CHS,,0,0,0,,实现光标应该做的事情，如果它从右到左移动，那么输入从左到右的文本 \N {\rENG} the cursor is supposed to be doing, if it moves right to left, then enters left to right // TODO
 Dialogue: 0,0:13:02.00,0:13:12.00,CHS,,0,0,0,,文本，有一个岛... \N {\rENG} text and there is an island of... if you aremixing Arabic or Hebrew or other scripts you
 Dialogue: 0,0:13:12.00,0:13:19.00,CHS,,0,0,0,,- \N {\rENG} get islands inside of your paragraphs thatare running in different directions, people
 Dialogue: 0,0:13:19.00,0:13:20.00,CHS,,0,0,0,,- \N {\rENG} need like this.
