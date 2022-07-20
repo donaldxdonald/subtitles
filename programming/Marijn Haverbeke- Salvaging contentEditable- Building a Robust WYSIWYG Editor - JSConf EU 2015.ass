@@ -15,9 +15,9 @@ Video File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Bui
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Scroll Position: 105
-Active Line: 115
-Video Position: 19425
+Scroll Position: 131
+Active Line: 149
+Video Position: 25024
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -141,39 +141,41 @@ Dialogue: 0,0:12:24.00,0:12:32.00,CHS,,0,0,0,,那个方法谷歌文档也有使�
 Dialogue: 0,0:12:36.18,0:12:42.82,CHS,,0,0,0,,你可以得到非常快的速度，特别是在桌面浏览器上，你可以使用这种技术获得良好的编辑体验 \N {\rENG} you can get really fast, especially on desktop browsers you can get a good editing experience using this technique
 Dialogue: 0,0:12:45.00,0:12:51.00,CHS,,0,0,0,,在某些时候你确实会遇到问题，如果你完全保持自己的选区， \N {\rENG} At some point you do run into problems, if you maintain your own selection entirely,
 Dialogue: 0,0:12:51.00,0:12:57.00,CHS,,0,0,0,,你会遇到双向文本的所有复杂性，你必须 \N {\rENG} you get all the complexity of bidirectional text on your plate you have to implement what
-Dialogue: 0,0:12:57.00,0:13:02.00,CHS,,0,0,0,,实现光标应该做的事情，如果它从右到左移动，那么输入从左到右的文本 \N {\rENG} the cursor is supposed to be doing, if it moves right to left, then enters left to right // TODO
-Dialogue: 0,0:13:02.00,0:13:12.00,CHS,,0,0,0,,文本，有一个岛... \N {\rENG} text and there is an island of... if you aremixing Arabic or Hebrew or other scripts you
-Dialogue: 0,0:13:12.00,0:13:19.00,CHS,,0,0,0,,- \N {\rENG} get islands inside of your paragraphs thatare running in different directions, people
-Dialogue: 0,0:13:19.00,0:13:20.00,CHS,,0,0,0,,- \N {\rENG} need like this.
-Dialogue: 0,0:13:20.00,0:13:25.00,CHS,,0,0,0,,就像阿拉伯语或希伯来语作家真的需要它来工作一样，如果它不起作用，你就不能对你的编辑器做太多事情，把 \N {\rENG} Like Arabic or Hebrew writers really needthis to be work, you can't do much with your
-Dialogue: 0,0:13:25.00,0:13:32.00,CHS,,0,0,0,,它做好是非常困难的。 \N {\rENG} editor if it doesn't work, it's giganticallydifficult to get it right.
-Dialogue: 0,0:13:32.00,0:13:37.00,CHS,,0,0,0,,内容菜单应该显示剪切和粘贴，如果您单击它，如果那里有不可编辑的 \N {\rENG} The content menu should shows cut and paste,if you click on it, if you have a non-editable
-Dialogue: 0,0:13:37.00,0:13:45.00,CHS,,0,0,0,,gif，它不会知道。 \N {\rENG} gif there, it won't know.
-Dialogue: 0,0:13:45.00,0:13:50.00,CHS,,0,0,0,,你可以找到这个的十六进制，这个的十六进制是 \N {\rENG} You can find the hex for this, the hex forthis is to pop-up a tiny transparent text
-Dialogue: 0,0:13:50.00,0:13:56.00,CHS,,0,0,0,,当用户右键单击并在剪切或粘贴时挂钩正确的东西时，在光标下弹出一个微小的透明文本区域 \N {\rENG} area under the cursor when the user rightclicks and hooks up the right thing when he
-Dialogue: 0,0:13:56.00,0:14:03.00,CHS,,0,0,0,,，你可以让它工作，但它的 痛苦或尴尬。 \N {\rENG} cuts or pastes, you can get it to work butit's painful or awkward.
-Dialogue: 0,0:14:03.00,0:14:10.00,CHS,,0,0,0,,然后，移动界面，触摸界面变得普遍，并且 \N {\rENG} Then, mobile interfaces, touch interfacesbecame widespread and the integration Between
-Dialogue: 0,0:14:10.00,0:14:20.00,CHS,,0,0,0,,选择和触摸界面之间的集成非常深刻和微妙，产生了原生选择，当你实际上不让浏览器知道选择时， \N {\rENG} the selection and touch interface is verydeep and very subtle, producing a native selection,
-Dialogue: 0,0:14:20.00,0:14:25.00,CHS,,0,0,0,,一个原生字段来操作 \N {\rENG} a native field to manipulate the selectionwhen you are not actually letting the browser
-Dialogue: 0,0:14:25.00,0:14:32.00,CHS,,0,0,0,,选择是 几乎不可能，我认为还没有人成功。 \N {\rENG} know about the selection is almost impossible,I don't think anyone has pulled it off yet.
+Dialogue: 0,0:12:57.00,0:13:02.84,CHS,,0,0,0,,实现光标应该做的事情，如果它从右到左移动，那么输入从左到右的文本 \N {\rENG} the cursor is supposed to be doing, if it moves right to left, then enters left to right
+Dialogue: 0,0:13:03.14,0:13:06.76,CHS,,0,0,0,,文本，有一个岛... \N {\rENG} text and there is an island of ...
+Dialogue: 0,0:13:07.14,0:13:12.58,CHS,,0,0,0,,当你的文本中有阿拉伯语、希伯来语的时候\N{\rENG}when you are mixing Arabic or Hebrew or other scripts
+Dialogue: 0,0:13:12.70,0:13:17.94,CHS,,0,0,0,,你就会得到方向不一致的像群岛一般的段落 \N {\rENG} you just get islands inside of your paragraphs that are running in different directions
+Dialogue: 0,0:13:18.26,0:13:22.96,CHS,,0,0,0,,像阿拉伯语或希伯来语的作家真的需要它能用 \N {\rENG}  People like Arabic or Hebrew writers really need this to be work
+Dialogue: 0,0:13:23.20,0:13:30.02,CHS,,0,0,0,,【听不清】它做好是非常困难的。 \N {\rENG} editor if it doesn't work, it's gigantically complex to get it right.
+Dialogue: 0,0:13:30.62,0:13:38.42,CHS,,0,0,0,,还有就是右键菜单应该显示剪切和粘贴，如果您单击它，但如果那里有不可编辑的 div 元素 \N {\rENG} Another simple things like the context menu should shows cut and paste,if you click on it, if you have a non-editable div there
+Dialogue: 0,0:13:38.62,0:13:45.00,CHS,,0,0,0,,浏览器怎么知道想要干嘛呢 \N {\rENG} How's browser going to know to show cut or paste or select all in the menu
+Dialogue: 0,0:13:45.00,0:13:50.00,CHS,,0,0,0,,你可以用一些骚操作，这个骚操作就是 \N {\rENG} You can find the hacks for this, the hack for this is to quickly pop-up a tiny transparent text
+Dialogue: 0,0:13:50.00,0:13:56.00,CHS,,0,0,0,,当用户点击右键时，在光标下快速弹出一个微小的透明文本区，当他剪切或粘贴时 \N {\rENG} area under the cursor when the user rightclicks and hooks up the right thing when he
+Dialogue: 0,0:13:56.00,0:14:03.00,CHS,,0,0,0,,就会挂上正确的东西。这虽然能用，但还是挺难受的 \N {\rENG} cuts or pastes, you can get it to work but it's painful or awkward
+Dialogue: 0,0:14:03.00,0:14:10.00,CHS,,0,0,0,,然后，移动界面，触摸界面变得普遍，并且 \N {\rENG} And then, mobile interfaces, touch interfaces became widespread and the integration between
+Dialogue: 0,0:14:10.00,0:14:20.00,CHS,,0,0,0,,选区和触摸界面之间的集成非常深刻和微妙，产生了原生的选区 \N {\rENG} the selection and touch interface is very deep and very subtle, producing a native selection,
+Dialogue: 0,0:14:20.00,0:14:25.00,CHS,,0,0,0,,在浏览器没有选区信息的情况下，用一个客户端原生的输入框来操作选区 \N {\rENG} a native field to manipulate the selection when you are not actually letting the browser
+Dialogue: 0,0:14:25.00,0:14:32.00,CHS,,0,0,0,,几乎是不可能的，我认为还没有人成功。 \N {\rENG} know about the selection is almost impossible,I don't think anyone has pulled it off yet.
 Dialogue: 0,0:14:32.00,0:14:36.00,CHS,,0,0,0,,所以这也可能不是正确的解决方案。 \N {\rENG} So this may not be the right solution either.
-Dialogue: 0,0:14:36.00,0:14:43.00,CHS,,0,0,0,,所以也许让我们在中间见面，这就是促使 ProseMirror 的想法， \N {\rENG} So maybe let's meet in the middle and thisis the idea that prompted ProseMirror, give
-Dialogue: 0,0:14:43.00,0:14:51.00,CHS,,0,0,0,,给编辑器可见的 DOM，当用户做某事并生成一个事件时， \N {\rENG} the editor the visible DOM, when the userdoes something and it generates an event,
-Dialogue: 0,0:14:51.00,0:15:01.00,CHS,,0,0,0,,我们介入并说做任何事情浏览器，我们会处理这个并且 get - 将它与 \N {\rENG} we step in and say doing do anything browser,we'll handle this and get - isolate this from
-Dialogue: 0,0:15:01.00,0:15:08.00,CHS,,0,0,0,,contentEditable 的许多恐怖隔离开来，不再发生 DOM 的随机操作 \N {\rENG} a lot of the horrors of contentEditable, therandom manipulation by the DOM is no longer
-Dialogue: 0,0:15:08.00,0:15:15.00,CHS,,0,0,0,,，它允许我们定义模型并且是 \N {\rENG} happens, it allows us to define the modeland be the
-Dialogue: 0,0:15:15.00,0:15:23.00,CHS,,0,0,0,,唯一接触到的人，在旧方法中，DOM 是您的文档模型。 \N {\rENG} only one touching that, in the older approachthe DOM is your document model.
-Dialogue: 0,0:15:23.00,0:15:30.00,CHS,,0,0,0,,您不保留自己的数据副本，让 DOM 确定文档的 \N {\rENG} You don't keep your own copy of the data youlet the DOM determine what the document looks
-Dialogue: 0,0:15:30.00,0:15:35.00,CHS,,0,0,0,,外观，您不知道浏览器将对此做什么，这就像在流沙上构建， \N {\rENG} like, you don't know what the browser willdo with this, it's like building on quicksand,
-Dialogue: 0,0:15:35.00,0:15:41.00,CHS,,0,0,0,,事情可能会发生变化，请注意您以某种方式依赖 现有的可能会 \N {\rENG} things might change, notes that you somehowdepending on existing might be replaced by
-Dialogue: 0,0:15:41.00,0:15:53.00,CHS,,0,0,0,,被副本取代，完全控制提供您的文档模型是一件非常有用的事情，我 \N {\rENG} a copy, having full control offer your documentmodel is a very useful thing to do and I think
-Dialogue: 0,0:15:53.00,0:16:04.00,CHS,,0,0,0,,认为最近出现的其他一些所见即所得也朝着这个方向发展。 \N {\rENG} some of the other WYSIWYGs that have croppedup recently are also moving in this direction.
-Dialogue: 0,0:16:04.00,0:16:05.00,CHS,,0,0,0,,. \N {\rENG} .
-Dialogue: 0,0:16:05.00,0:16:09.00,CHS,,0,0,0,,是的，ProseMirror 是从头开始设计的，假设我们有一个文档 \N {\rENG} Yeah, ProseMirror is designed from the groundup with the assumption that we have a document
-Dialogue: 0,0:16:09.00,0:16:16.00,CHS,,0,0,0,,模型，然后有一个 DOM，DOM 是文档模型上的一个视图，文档 \N {\rENG} model and then there is a DOM, the DOM isa view on the document model, the document
-Dialogue: 0,0:16:16.00,0:16:23.00,CHS,,0,0,0,,是实体的，我们完全拥有它，当它发生变化时，我们会更新 DOM 自己并向 \N {\rENG} is solid we have it entirely, when it's changedwe update the DOM ourselves and show the user
-Dialogue: 0,0:16:23.00,0:16:34.00,CHS,,0,0,0,,用户显示伪可编辑的东西，它应该是可编辑的，但我们不让他们直接编辑 \N {\rENG} the pseudo editable thing, it's supposed tobe editable but we don't let them edict directly,
-Dialogue: 0,0:16:34.00,0:16:41.00,CHS,,0,0,0,,，选择不是您可以在触摸界面上操作的真实选择， \N {\rENG} the selection is not a real selection youcan manipulate on a touch interface, bi directional
+Dialogue: 0,0:14:36.00,0:14:43.00,CHS,,0,0,0,,那么让我们在中间见面，这就是促使 ProseMirror 的想法， \N {\rENG} So maybe let's meet in the middle and this is the idea that prompted ProseMirror
+Dialogue: 0,0:14:43.00,0:14:48.08,CHS,,0,0,0,,给编辑器可编辑的 DOM，就会知道用户是在编辑中 \N {\rENG} give the browser its editable DOM, so it did know the user is editing something 
+Dialogue: 0,0:14:48.08,0:14:53.26,CHS,,0,0,0,,但当用户做其他事情的时候，就会生成一个事件，我们就会介入，说 OK\N{\rENG} But then when the user actually does something and it generates an event, we just step in and say, OK
+Dialogue: 0,0:14:53.66,0:14:58.78,CHS,,0,0,0,,浏览器，你不要动，我们会覆盖默认行为，我们来处理 \N {\rENG} Don't do anything browser.  We will prevent default this. We will handle this.
+Dialogue: 0,0:14:59.20,0:15:04.30,CHS,,0,0,0,,我们会将其与 contentEditable 的许多可怕的地方隔离开来 \N {\rENG} and  get isolate this from a lot of the horrors of contentEditable
+Dialogue: 0,0:15:04.54,0:15:09.14,CHS,,0,0,0,,这样的话就不会再发生 DOM 的随机操作了\N{\rENG}The random manipulation of the DOM by the browser is no longer happening
+Dialogue: 0,0:15:10.22,0:15:14.66,CHS,,0,0,0,,它（ProseMirror）允许我们自定义文档模型 \N {\rENG} It allows us to define the document model
+Dialogue: 0,0:15:15.00,0:15:20.18,CHS,,0,0,0,,而且我们是唯一能接触到它的人，在旧方法中，DOM 是您的文档模型。 \N {\rENG} and be the only one touching that, in the older approach the DOM is your document model
+Dialogue: 0,0:15:22.86,0:15:30.00,CHS,,0,0,0,,您不保留自己的数据副本，DOM 咋样你的文档就咋样 \N {\rENG} You don't keep your own copy of the data you let the DOM determine what the document looks like
+Dialogue: 0,0:15:30.00,0:15:35.00,CHS,,0,0,0,,但是您不知道浏览器会对它做什么，这就像在流沙上搭建一样 \N {\rENG} but you don't know what the browser is going to do to this, it's like building on quicksand,
+Dialogue: 0,0:15:35.00,0:15:42.60,CHS,,0,0,0,,事情可能会发生变化，你现有的笔记可能会突然消失或被一个副本所替换 \N {\rENG} things might change, notes that you somehow depending on existing might suddenly be vanished or be replaced by a copy
+Dialogue: 0,0:15:42.60,0:15:44.60,CHS,,0,0,0,,谁知道呢\N{\rENG}who knows what
+Dialogue: 0,0:15:44.78,0:15:51.94,CHS,,0,0,0,,拥有文档模型的完全控制权是一件非常有用的事情 \N {\rENG} having full control offer your document model is a very useful thing to do
+Dialogue: 0,0:15:53.00,0:16:01.04,CHS,,0,0,0,,我认为最近出现的其他一些所见即所得也朝着这个方向发展 \N {\rENG} some of the other WYSIWYGs that have cropped up recently are also moving in this direction
+Dialogue: 0,0:16:05.50,0:16:09.84,CHS,,0,0,0,,是的，ProseMirror 的设计的从一开始就假定我们有一个文档模型 \N {\rENG} Yeah, ProseMirror is designed from the ground up with the assumption that we have a document model
+Dialogue: 0,0:16:09.94,0:16:16.00,CHS,,0,0,0,,然后有一个 DOM，DOM 只是文档模型上的一个视图 \N {\rENG} and then there is a DOM, the DOM is just a view on this document model
+Dialogue: 0,0:16:16.00,0:16:23.00,CHS,,0,0,0,,文档是牢固的，我们能完全控制它，当它发生变化时，我们会自己更新 DOM  \N {\rENG} the document is solid we control it entirely, when it's changed we update the DOM ourselves and show the user
+Dialogue: 0,0:16:23.00,0:16:31.80,CHS,,0,0,0,,并向用户显示假的可编辑的东西，它应该是可编辑的，但我们不让他们直接编辑 \N {\rENG} the pseudo editable thing, it's supposed to be editable but we don't let them edict directly,
+Dialogue: 0,0:16:32.52,0:16:41.00,CHS,,0,0,0,,，选择不是您可以在触摸界面上操作的真实选择， \N {\rENG} the selection is not a real selection youcan manipulate on a touch interface, bi directional //TODO
 Dialogue: 0,0:16:41.00,0:16:45.00,CHS,,0,0,0,,双向文本的双向光标移动可以通过浏览器离开，我们想 \N {\rENG} cursor motion by bi directional text can beleft through the browser, we dent want to
 Dialogue: 0,0:16:45.00,0:16:49.00,CHS,,0,0,0,,考虑一下，这样可以节省复杂性。 \N {\rENG} think about that, that saves complexity.
 Dialogue: 0,0:16:49.00,0:16:54.00,CHS,,0,0,0,,当然，实现我们自己的文档模型和所有可能的更改也是非常 \N {\rENG} Of course implementing our own document modeland all possible changes is also a lot of
