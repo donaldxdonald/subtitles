@@ -15,9 +15,9 @@ Video File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Bui
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.750000
-Scroll Position: 131
-Active Line: 149
-Video Position: 25024
+Scroll Position: 152
+Active Line: 170
+Video Position: 28174
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -158,7 +158,7 @@ Dialogue: 0,0:14:20.00,0:14:25.00,CHS,,0,0,0,,在浏览器没有选区信息的�
 Dialogue: 0,0:14:25.00,0:14:32.00,CHS,,0,0,0,,几乎是不可能的，我认为还没有人成功。 \N {\rENG} know about the selection is almost impossible,I don't think anyone has pulled it off yet.
 Dialogue: 0,0:14:32.00,0:14:36.00,CHS,,0,0,0,,所以这也可能不是正确的解决方案。 \N {\rENG} So this may not be the right solution either.
 Dialogue: 0,0:14:36.00,0:14:43.00,CHS,,0,0,0,,那么让我们在中间见面，这就是促使 ProseMirror 的想法， \N {\rENG} So maybe let's meet in the middle and this is the idea that prompted ProseMirror
-Dialogue: 0,0:14:43.00,0:14:48.08,CHS,,0,0,0,,给编辑器可编辑的 DOM，就会知道用户是在编辑中 \N {\rENG} give the browser its editable DOM, so it did know the user is editing something 
+Dialogue: 0,0:14:43.00,0:14:48.08,CHS,,0,0,0,,给编辑器可编辑的 DOM，就会知道用户是在编辑中 \N {\rENG} give the browser its editable DOM, so it did know the user is editing something
 Dialogue: 0,0:14:48.08,0:14:53.26,CHS,,0,0,0,,但当用户做其他事情的时候，就会生成一个事件，我们就会介入，说 OK\N{\rENG} But then when the user actually does something and it generates an event, we just step in and say, OK
 Dialogue: 0,0:14:53.66,0:14:58.78,CHS,,0,0,0,,浏览器，你不要动，我们会覆盖默认行为，我们来处理 \N {\rENG} Don't do anything browser.  We will prevent default this. We will handle this.
 Dialogue: 0,0:14:59.20,0:15:04.30,CHS,,0,0,0,,我们会将其与 contentEditable 的许多可怕的地方隔离开来 \N {\rENG} and  get isolate this from a lot of the horrors of contentEditable
@@ -175,28 +175,28 @@ Dialogue: 0,0:16:05.50,0:16:09.84,CHS,,0,0,0,,是的，ProseMirror 的设计的�
 Dialogue: 0,0:16:09.94,0:16:16.00,CHS,,0,0,0,,然后有一个 DOM，DOM 只是文档模型上的一个视图 \N {\rENG} and then there is a DOM, the DOM is just a view on this document model
 Dialogue: 0,0:16:16.00,0:16:23.00,CHS,,0,0,0,,文档是牢固的，我们能完全控制它，当它发生变化时，我们会自己更新 DOM  \N {\rENG} the document is solid we control it entirely, when it's changed we update the DOM ourselves and show the user
 Dialogue: 0,0:16:23.00,0:16:31.80,CHS,,0,0,0,,并向用户显示假的可编辑的东西，它应该是可编辑的，但我们不让他们直接编辑 \N {\rENG} the pseudo editable thing, it's supposed to be editable but we don't let them edict directly,
-Dialogue: 0,0:16:32.52,0:16:41.00,CHS,,0,0,0,,，选择不是您可以在触摸界面上操作的真实选择， \N {\rENG} the selection is not a real selection youcan manipulate on a touch interface, bi directional //TODO
-Dialogue: 0,0:16:41.00,0:16:45.00,CHS,,0,0,0,,双向文本的双向光标移动可以通过浏览器离开，我们想 \N {\rENG} cursor motion by bi directional text can beleft through the browser, we dent want to
-Dialogue: 0,0:16:45.00,0:16:49.00,CHS,,0,0,0,,考虑一下，这样可以节省复杂性。 \N {\rENG} think about that, that saves complexity.
-Dialogue: 0,0:16:49.00,0:16:54.00,CHS,,0,0,0,,当然，实现我们自己的文档模型和所有可能的更改也是非常 \N {\rENG} Of course implementing our own document modeland all possible changes is also a lot of
-Dialogue: 0,0:16:54.00,0:17:00.00,CHS,,0,0,0,,复杂的，但我认为这是您作为文本编辑器想要的复杂性，您希望 \N {\rENG} complexity, but this is complexity I thinkyou want as a text editor, you want to define
-Dialogue: 0,0:17:00.00,0:17:04.00,CHS,,0,0,0,,以一种可预测的、明确定义的方式来定义它。 \N {\rENG} it in one predictable, well-defined way.
-Dialogue: 0,0:17:04.00,0:17:12.00,CHS,,0,0,0,,你想让它们可定制，你想在涉及到的时候去掉浏览器。 \N {\rENG} You want to make them customisable, you wantto cut out the browser when it comes to that.
-Dialogue: 0,0:17:12.00,0:17:20.00,CHS,,0,0,0,,因此，我将稍微介绍一下 ProseMirror 文档模型，三个基础很像 \N {\rENG} So I'm going to go into ProseMirror documentmodel for a bit, three base much like the
-Dialogue: 0,0:17:20.00,0:17:28.00,CHS,,0,0,0,,DOM，如果您有一个包含三个项目列表的文档，它看起来像这样。 \N {\rENG} DOM, if you have a document with a list ofthree items, it looks something like this.
-Dialogue: 0,0:17:28.00,0:17:35.00,CHS,,0,0,0,,您现在得到一个列表或三个项目注释，其中包含一些文本内容的段落注释。 \N {\rENG} You get a list now or three item notes, paragraphnotes with some text content in it.
-Dialogue: 0,0:17:35.00,0:17:40.00,CHS,,0,0,0,,它与 DOM 完全不同的一件事是它是一个持久数据结构， \N {\rENG} One thing that it does very differently fromthe DOM it's a persistent data structure,
-Dialogue: 0,0:17:40.00,0:17:46.00,CHS,,0,0,0,,所以如果你更新它，你会创建一个新版本，而旧版本不会受到影响，所以你只是 \N {\rENG} so if you update it you create a new versionand the old version is untouched, so you just
-Dialogue: 0,0:17:46.00,0:17:48.00,CHS,,0,0,0,,不去那里开始添加孩子，我不 不知道在哪里。 \N {\rENG} don't go in there and start adding children,I don't know where.
-Dialogue: 0,0:17:48.00,0:17:58.00,CHS,,0,0,0,,有一组明确定义的可能更新，您可以应用更新来获取新文档。 \N {\rENG} There is a well-defined set of possible updatesand you apply an update to get a new document.
-Dialogue: 0,0:17:58.00,0:18:03.00,CHS,,0,0,0,,这并不像听起来那么昂贵，如果您在此列表中添加一个项目，它可以进行数据共享 \N {\rENG} This is not as expensive as it sounds, itcan do data sharing if you an item to this
-Dialogue: 0,0:18:03.00,0:18:11.00,CHS,,0,0,0,,，您只需重复使用旧项目注释并复制文档和列表 \N {\rENG} list here, you just reuse the old item notesand make a copy of the document and the list
-Dialogue: 0,0:18:11.00,0:18:16.00,CHS,,0,0,0,,注释，列表注释中的第四个孩子，您只是在复制两个笔记，而 \N {\rENG} notes, the fourth child in the list notes,you are only copying two notes rather than
-Dialogue: 0,0:18:16.00,0:18:20.00,CHS,,0,0,0,,不是整个文档结构。 \N {\rENG} your whole document structure.
-Dialogue: 0,0:18:20.00,0:18:25.00,CHS,,0,0,0,,ProseMirror 所做的另一件事与 DOM 不同，当您有行内内容时， \N {\rENG} Another thing that ProseMirror does differentlyfrom the DOM, when you have in line content
-Dialogue: 0,0:18:25.00,0:18:34.00,CHS,,0,0,0,,这就是您如何表示带有蜜蜂链接和注释文本的段落，您创建 \N {\rENG} this is how you represent a paragraph witha bees of link and note text in it, you create
-Dialogue: 0,0:18:34.00,0:18:40.00,CHS,,0,0,0,,一个带有例如强注释的子树，然后将内容放在 强下那。 \N {\rENG} a subtree with for example a strong note andyou put the content that's strong under that.
-Dialogue: 0,0:18:40.00,0:18:47.00,CHS,,0,0,0,,ProseMirror 实际上是线性的，其中行内的段落内容始终是 \N {\rENG} ProseMirror actually makes linear, where inline paragraph content is always a sequence
+Dialogue: 0,0:16:32.52,0:16:39.42,CHS,,0,0,0,,我想这基本上是两全其美的了。这个选区就是你能在触摸屏上控制的选区 \N {\rENG} And I guess this is basically the best of both worlds. This selection is now a real selection you can manipulate on a touch interface
+Dialogue: 0,0:16:40.88,0:16:45.00,CHS,,0,0,0,,光标可以通过浏览器移动到双向文本 \N {\rENG} cursor motion to bidirectional text can be left through the browser
+Dialogue: 0,0:16:45.00,0:16:49.00,CHS,,0,0,0,,我们不想考虑这个问题，这样可以省去很多麻烦 \N {\rENG}  we don‘t want to think about that, that saves complexity
+Dialogue: 0,0:16:49.00,0:16:54.00,CHS,,0,0,0,,当然，实现我们自己的文档模型和所有可能的更改也是非常 \N {\rENG} Of course implementing our own document model and all possible changes is also a lot of
+Dialogue: 0,0:16:54.00,0:17:00.00,CHS,,0,0,0,,复杂的，但我认为这是一个文本编辑器可接受的复杂度，您希望 \N {\rENG} complexity, but this is complexity I think you want as a text editor, you want to define
+Dialogue: 0,0:17:00.00,0:17:04.00,CHS,,0,0,0,,以一种可预测的、明确定义的方式来定义它 \N {\rENG} it in one predictable, well-defined way
+Dialogue: 0,0:17:04.92,0:17:12.00,CHS,,0,0,0,,你想让它们可定制的话，那就要在涉及到这个问题时把浏览器隔离开来 \N {\rENG} You wanna make them customizable, you just want to cut out the browser when it comes to that
+Dialogue: 0,0:17:12.00,0:17:20.00,CHS,,0,0,0,,接下来我将介绍一下 ProseMirror 的文档模型，这个很像 DOM 的树 \N {\rENG} So I'm going to go into ProseMirror document model for a bit, tree base much like the DOM
+Dialogue: 0,0:17:20.00,0:17:28.00,CHS,,0,0,0,,如果你有一个带有三个列表项的文档，它看起来像这样 \N {\rENG} if you have a document with a list of three items, it looks something like this
+Dialogue: 0,0:17:28.00,0:17:35.00,CHS,,0,0,0,,您现在得到一个列表节点、三个列表项节点、三个段落节点还有一些文本内容的段落注释 \N {\rENG} You get a list node or three item nodes, paragraph nodes with some text content in it.
+Dialogue: 0,0:17:35.00,0:17:40.00,CHS,,0,0,0,,它与 DOM 很不同的一点是它是一个持久性的数据结构 \N {\rENG} One thing that it does very differently from he DOM it's a persistent data structure
+Dialogue: 0,0:17:40.00,0:17:45.06,CHS,,0,0,0,,如果你更新了它，你就创建了一个新的版本，而旧版本不会受到影响 \N {\rENG} if you update it you create a new version and the old version is untouched
+Dialogue: 0,0:17:45.50,0:17:49.84,CHS,,0,0,0,,这样你就不会在不知道什么地方去添加子元素 \N {\rENG} so you don't go in there and start adding children,I don't know where
+Dialogue: 0,0:17:50.68,0:17:58.00,CHS,,0,0,0,,有一组明确定义的更新数据，您可以应用这更新数据来获取新的文档 \N {\rENG} There is a well-defined set of possible updates and you apply an update to get a new document.
+Dialogue: 0,0:17:58.00,0:18:03.00,CHS,,0,0,0,,这好像没有听起来那么难，如果您在此列表中添加一个项目，它可以进行数据共享 \N {\rENG} This is not as expensive as it sounds, it can do data sharing if you an item to this
+Dialogue: 0,0:18:03.00,0:18:11.00,CHS,,0,0,0,,您只需重复使用旧节点并复制文档和列表节点 \N {\rENG} list here, you just reuse the old item nodes and make a copy of the document and the list nodes
+Dialogue: 0,0:18:11.00,0:18:16.00,CHS,,0,0,0,,中的第四个子节点，您只是在复制两个节点 \N {\rENG} with the fourth child in the list nodes,you are only copying two nodes rather than
+Dialogue: 0,0:18:16.00,0:18:20.00,CHS,,0,0,0,,而不是整个文档结构。 \N {\rENG} your whole document structure.
+Dialogue: 0,0:18:20.00,0:18:25.48,CHS,,0,0,0,,ProseMirror 另一个与 DOM 不同的是，当您有行内内容时 \N {\rENG} Another thing that ProseMirror does differently from the DOM is that when you have inline content
+Dialogue: 0,0:18:25.74,0:18:33.06,CHS,,0,0,0,,这就是你在 DOM 里表示一个段落里面有有粗体文字和链接文字的方式 \N {\rENG} this is how you represent a paragraph with a piece of bold and link and text in it
+Dialogue: 0,0:18:33.22,0:18:39.40,CHS,,0,0,0,,就需要创建一个 strong 元素的子树，里面有需要加粗的内容 \N {\rENG} so you create a subtree with a strong node and you put the content that's strong under that
+Dialogue: 0,0:18:40.00,0:18:47.00,CHS,,0,0,0,,ProseMirror 实际上是线性的，其中行内的段落内容始终是 \N {\rENG} ProseMirror actually makes linear, where inline paragraph content is always a sequence //TODO
 Dialogue: 0,0:18:47.00,0:18:54.00,CHS,,0,0,0,,带有样式信息和图像或注释的文本序列，它们可以出现在这里， \N {\rENG} of pieces of text with styling informationand images or notes that can appear here,
 Dialogue: 0,0:18:54.00,0:18:58.00,CHS,,0,0,0,,它们不嵌套，超出段落级别没有嵌套，您可以看到这是怎么回事 \N {\rENG} they don't nest, beyond the paragraph levelthere is no nesting you can see how this is
 Dialogue: 0,0:18:58.00,0:19:00.00,CHS,,0,0,0,,比这更难读。 \N {\rENG} harder to read than this.
