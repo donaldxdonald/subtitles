@@ -10,18 +10,16 @@ PlayResX: 1920
 PlayResY: 1080
 
 [Aegisub Project Garbage]
-Audio File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
-Video File: D:/Videos/Translate/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015/Marijn Haverbeke- Salvaging contentEditable- Building a Robust WYSIWYG Editor - JSConf EU 2015.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
-Video Zoom Percent: 0.750000
-Scroll Position: 152
-Active Line: 170
-Video Position: 28174
+Video Zoom Percent: 0.625000
+Scroll Position: 24
+Active Line: 30
+Video Position: 5919
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: CHS,霞鹜文楷,57,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: CHS,霞鹜文楷,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
 Style: ENG,Jost,45,&H0000FFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
 
 [Events]
@@ -196,97 +194,98 @@ Dialogue: 0,0:18:16.00,0:18:20.00,CHS,,0,0,0,,而不是整个文档结构。 \N 
 Dialogue: 0,0:18:20.00,0:18:25.48,CHS,,0,0,0,,ProseMirror 另一个与 DOM 不同的是，当您有行内内容时 \N {\rENG} Another thing that ProseMirror does differently from the DOM is that when you have inline content
 Dialogue: 0,0:18:25.74,0:18:33.06,CHS,,0,0,0,,这就是你在 DOM 里表示一个段落里面有有粗体文字和链接文字的方式 \N {\rENG} this is how you represent a paragraph with a piece of bold and link and text in it
 Dialogue: 0,0:18:33.22,0:18:39.40,CHS,,0,0,0,,就需要创建一个 strong 元素的子树，里面有需要加粗的内容 \N {\rENG} so you create a subtree with a strong node and you put the content that's strong under that
-Dialogue: 0,0:18:40.00,0:18:47.00,CHS,,0,0,0,,ProseMirror 实际上是线性的，其中行内的段落内容始终是 \N {\rENG} ProseMirror actually makes linear, where inline paragraph content is always a sequence //TODO
-Dialogue: 0,0:18:47.00,0:18:54.00,CHS,,0,0,0,,带有样式信息和图像或注释的文本序列，它们可以出现在这里， \N {\rENG} of pieces of text with styling informationand images or notes that can appear here,
-Dialogue: 0,0:18:54.00,0:18:58.00,CHS,,0,0,0,,它们不嵌套，超出段落级别没有嵌套，您可以看到这是怎么回事 \N {\rENG} they don't nest, beyond the paragraph levelthere is no nesting you can see how this is
-Dialogue: 0,0:18:58.00,0:19:00.00,CHS,,0,0,0,,比这更难读。 \N {\rENG} harder to read than this.
-Dialogue: 0,0:19:00.00,0:19:05.00,CHS,,0,0,0,,当你在代码中处理它时也是一样的，很多你想做的事情 \N {\rENG} It's the same when you are dealing with itin code, a lot of the things you want to do
-Dialogue: 0,0:19:05.00,0:19:10.00,CHS,,0,0,0,,在这方面要容易得多，例如，验证你没有两次强调一段文本 \N {\rENG} are much easier on this, for example, verifyingthat you are not emphasising a piece of text
-Dialogue: 0,0:19:10.00,0:19:18.00,CHS,,0,0,0,,，这是微不足道的，这个树表示是一个 树表示的痛苦类似地， \N {\rENG} twice, it's trivial and this tree representationis a pain in the... tree representation similarly
-Dialogue: 0,0:19:18.00,0:19:25.00,CHS,,0,0,0,,如果我们想表示段落中的位置，我们可以只是一个字符偏移量，我们 \N {\rENG} if we want to represent positions in the paragraphwe can just a character offset and we
+Dialogue: 0,0:18:40.00,0:18:47.00,CHS,,0,0,0,,ProseMirror 实际上是线性的，其中行内的段落内容始终是 \N {\rENG} ProseMirror actually makes linear, where inline paragraph level content is always a sequence 
+Dialogue: 0,0:18:47.00,0:18:54.00,CHS,,0,0,0,,带有样式信息和图像或注释的文本序列，它们可以出现在这里， \N {\rENG} of pieces of text with styling information and images or notes that can appear here,
+Dialogue: 0,0:18:54.00,0:18:58.00,CHS,,0,0,0,,但是它们不嵌套，超出段落级别没有嵌套，您可以看到这是怎么回事 \N {\rENG} they don't nest, beyond the paragraph level there is no nesting you can see how
+Dialogue: 0,0:18:58.00,0:19:00.00,CHS,,0,0,0,,这比这更难读。 \N {\rENG} this is harder to read than this.
+Dialogue: 0,0:19:00.00,0:19:05.00,CHS,,0,0,0,,当你在代码中处理它时也是一样的，很多你想做的事情 \N {\rENG} It's the same when you are dealing with it in code, a lot of the things you want to do
+Dialogue: 0,0:19:05.00,0:19:10.00,CHS,,0,0,0,,在这方面要容易得多，例如，验证你没有两次强调一段文本 \N {\rENG} are much easier on this, for example, verifying that you are not emphasising a piece of text
+Dialogue: 0,0:19:10.00,0:19:18.00,CHS,,0,0,0,,这是微不足道的，这个树形结构其实挺痛苦的 \N {\rENG} twice, it's trivial and this tree representation is a pain in the... tree representation similarly
+Dialogue: 0,0:19:18.00,0:19:25.00,CHS,,0,0,0,,如果我们想表示段落中的位置，我们可以只是一个字符偏移量，我们 \N {\rENG} if we want to represent positions in the paragraph we can just a character offset and we
 Dialogue: 0,0:19:25.00,0:19:28.00,CHS,,0,0,0,,不必担心树关系。 \N {\rENG} don't have to worry about tree relations.
-Dialogue: 0,0:19:28.00,0:19:35.00,CHS,,0,0,0,,所以这是一个巨大的胜利，让定义很多东西变得更容易。 \N {\rENG} So this was a big win and made it easier todefine a lot of things.
-Dialogue: 0,0:19:35.00,0:19:39.00,CHS,,0,0,0,,那么让我们看看当 ProseMirror 捕获事件时会发生什么。 \N {\rENG} So let's see what happens when ProseMirrorcaptures events.
-Dialogue: 0,0:19:39.00,0:19:45.00,CHS,,0,0,0,,你有你的编辑器，它渲染了一段可编辑的 DOM，对应于 \N {\rENG} You have your editor, it's rendered a pieceof editable DOM corresponding to the document
-Dialogue: 0,0:19:45.00,0:19:52.00,CHS,,0,0,0,,它在内存软件中的文档，有人按下“A”，我们为此捕获一个事件 \N {\rENG} it has itself in memory software, and someonepresses 'A', we capture an event for that
+Dialogue: 0,0:19:28.00,0:19:35.00,CHS,,0,0,0,,所以这是一个巨大的胜利，让定义很多东西变得更容易。 \N {\rENG} So this was a big win and made it easier tode fine a lot of things.
+Dialogue: 0,0:19:35.00,0:19:39.00,CHS,,0,0,0,,那么让我们看看当 ProseMirror 捕获事件时会发生什么。 \N {\rENG} So let's see what happens when ProseMirror captures events.
+Dialogue: 0,0:19:39.00,0:19:45.00,CHS,,0,0,0,,你有你的编辑器，它渲染了一段可编辑的 DOM，对应于 \N {\rENG} You have your editor, it's rendered a piece of editable DOM corresponding to the document
+Dialogue: 0,0:19:45.00,0:19:52.00,CHS,,0,0,0,,存在某处的的文档，有人按下“A”，我们为此捕获一个事件 \N {\rENG} it has itself in memory somewhere, and someone presses 'A', we capture an event for that
 Dialogue: 0,0:19:52.00,0:19:55.00,CHS,,0,0,0,,并创建一个更改对象。 \N {\rENG} and create a change object.
-Dialogue: 0,0:19:55.00,0:20:02.00,CHS,,0,0,0,,ProseMirror 中的更改是您可以存储和传递的一流对象，我们 \N {\rENG} Changes in ProseMirror are first class objectswhich you can store and pass around and we'll
+Dialogue: 0,0:19:55.00,0:20:02.00,CHS,,0,0,0,,ProseMirror 中的更改是您可以存储和传递的一等对象，我们 \N {\rENG} Changes in ProseMirror are first class objects which you can store and pass around and we'll
 Dialogue: 0,0:20:02.00,0:20:04.00,CHS,,0,0,0,,稍后再讨论。 \N {\rENG} come back to that later.
-Dialogue: 0,0:20:04.00,0:20:08.00,CHS,,0,0,0,,然后我们将更改对象应用于我们当前的文档，获取新文档， \N {\rENG} Then we apply the change object to our currentdocuments, get the new documents, make that
+Dialogue: 0,0:20:04.00,0:20:08.00,CHS,,0,0,0,,然后我们将更改对象应用于我们当前的文档，获取新文档， \N {\rENG} Then we apply the change object to our current documents, get the new documents, make that
 Dialogue: 0,0:20:08.00,0:20:16.00,CHS,,0,0,0,,制作当前文档并安排 DOM 更新，类似地，如果您按“退格”，您只需 \N {\rENG} the current documents and schedule a DOM update,similarly if you press 'Backspace', you just
-Dialogue: 0,0:20:16.00,0:20:22.00,CHS,,0,0,0,,使用退格计算要删除的内容，创建更改 ，获取 \N {\rENG} compute what you want to be deleting withbackspace, create a change, take the content
-Dialogue: 0,0:20:22.00,0:20:29.00,CHS,,0,0,0,,剪贴板的内容，将其传递到我们的文档格式中，并用这个文档片段替换选择， \N {\rENG} of the clipboard, pass it into our documentformat and replace the selection with this
+Dialogue: 0,0:20:16.00,0:20:22.00,CHS,,0,0,0,,使用退格计算要删除的内容，创建更改 ，获取 \N {\rENG} compute what you want to be deleting with backspace, create a change, take the content
+Dialogue: 0,0:20:22.00,0:20:29.00,CHS,,0,0,0,,剪贴板的内容，将其传递到我们的文档格式中，并用这个文档片段替换选区的内容 \N {\rENG} of the clipboard, pass it into our document format and replace the selection with this
 Dialogue: 0,0:20:29.00,0:20:35.00,CHS,,0,0,0,,以获得另一个更改对象。 \N {\rENG} document fragment to get another change object.
-Dialogue: 0,0:20:35.00,0:20:40.00,CHS,,0,0,0,,然后通过更新 DOM 来完成，因为我使用请求信息框架安排更新 \N {\rENG} Updating the DOM is then done by, as I schedulingupdates using request information frames,
-Dialogue: 0,0:20:40.00,0:20:46.00,CHS,,0,0,0,,，下次浏览器进行实际重绘时，它将首先运行代码， \N {\rENG} the next time the browser does an actual redrawit will first run are code which is responsible
-Dialogue: 0,0:20:46.00,0:20:52.00,CHS,,0,0,0,,负责确保 DOM 反映当前文档关于持久性的好处 \N {\rENG} for making sure the DOM reflects the currentdocument the nice thing about the persistent
-Dialogue: 0,0:20:52.00,0:20:59.00,CHS,,0,0,0,,停靠搜索我们可以做很多反应，我们可以将文档与当前文档分开， \N {\rENG} dock searches we can do pretty much react,we can div the document with the current document
-Dialogue: 0,0:20:59.00,0:21:04.00,CHS,,0,0,0,,并仅对DOM 进行必要的更改以移动到新文档，这 \N {\rENG} and make the changes only that are necessaryto the DOM to move to the new document, this
-Dialogue: 0,0:21:04.00,0:21:13.00,CHS,,0,0,0,,是非常高效和快速的，我们只需要做一点 比较，好的，这里没有任何变化 \N {\rENG} is insanely efficient and fast, we can justdo one point to compare, ok, nothing changed
-Dialogue: 0,0:21:13.00,0:21:16.00,CHS,,0,0,0,,，继续下一个音符。 \N {\rENG} here and move on to the next note.
-Dialogue: 0,0:21:16.00,0:21:28.00,CHS,,0,0,0,,当然它并不完全完美，在某些情况下解析不会触发好的事件， - 你 \N {\rENG} Of course it's not entirely perfect, in somecases parses do not fire good events, - you
-Dialogue: 0,0:21:28.00,0:21:35.00,CHS,,0,0,0,,写点击并选择这个世界的另一种拼写，然后它只会修改 DOM \N {\rENG} write click and choose another spelling ofthis world, then it will just modify the DOM
+Dialogue: 0,0:20:35.00,0:20:40.00,CHS,,0,0,0,,然后通过更新 DOM 来完成，因为我使用请求信息框架安排更新 \N {\rENG} Updating the DOM is then done by, as I scheduling updates using request information frames,
+Dialogue: 0,0:20:40.00,0:20:46.00,CHS,,0,0,0,,下次浏览器进行重绘时，它将首先运行代码， \N {\rENG} the next time the browser does an actual redraw it will first run our code which is responsible
+Dialogue: 0,0:20:46.00,0:20:52.00,CHS,,0,0,0,,负责确保 DOM 反映当前文档。关于文档持续搜索的好处是 \N {\rENG} for making sure the DOM reflects the current document the nice thing about the persistent
+Dialogue: 0,0:20:52.00,0:20:59.00,CHS,,0,0,0,,我们可以做很多事情，我们可以将文档的 DOM 更新与当前文档分开， \N {\rENG} document searches we can do pretty much react,we can div the document the DOM update with the current document
+Dialogue: 0,0:20:59.00,0:21:04.00,CHS,,0,0,0,,并仅对DOM 进行必要的更改以移动到新文档 \N {\rENG} and make the changes only that are necessary to the DOM to move to the new document
+Dialogue: 0,0:21:04.00,0:21:13.00,CHS,,0,0,0,,这是非常高效和快速的，我们只需要做一点 比较，好的，这里没有任何变化 \N {\rENG} this is insanely efficient and fast, we can just do one point to compare, ok, nothing changed
+Dialogue: 0,0:21:13.00,0:21:16.00,CHS,,0,0,0,,继续下一个节点。 \N {\rENG} here and move on to the next node.
+Dialogue: 0,0:21:16.00,0:21:28.00,CHS,,0,0,0,,当然它并不完全完美，在某些情况下浏览器不会正常地触发事件， - 你 \N {\rENG} Of course it's not entirely perfect, in somecases browsers do not fire good events, - you
+Dialogue: 0,0:21:28.00,0:21:35.00,CHS,,0,0,0,,写点击并选择这个单词的另一种拼写，然后它只会修改 DOM \N {\rENG} write click and choose another spelling of this word, then it will just modify the DOM
 Dialogue: 0,0:21:35.00,0:21:40.00,CHS,,0,0,0,,然后说，“输入”，意思是改变了，你不要 对此一无所知。 \N {\rENG} and then say, "Input", meaning something changed,you don't know anything about it.
-Dialogue: 0,0:21:40.00,0:21:46.00,CHS,,0,0,0,,所以，我们必须处理这个问题，在这种情况下，我们只需要 DOM 的一部分，比如 \N {\rENG} So, we have to deal with that and in thiscase we just take the part of the DOM, like
-Dialogue: 0,0:21:46.00,0:21:51.00,CHS,,0,0,0,,光标周围的块元素，重新解析它们，根据我们 \N {\rENG} the block elements around the cursor, reparsethose, div those with our understanding of
-Dialogue: 0,0:21:51.00,0:21:57.00,CHS,,0,0,0,,对文档的这些部分的外观的理解来划分它们并进行更改 从那开始，幸运的是， \N {\rENG} what those parts of that document look likeand arrive at change from that, fortunately
-Dialogue: 0,0:21:57.00,0:22:04.00,CHS,,0,0,0,,我只是在简单的文本更改中遇到了这个问题，并且派生一个简单的文本 \N {\rENG} I've only run into this problem for simpletextual changes and deriving a simple text
+Dialogue: 0,0:21:40.00,0:21:46.00,CHS,,0,0,0,,所以，我们必须处理这个问题，在这种情况下，我们只需要 DOM 的一部分，比如 \N {\rENG} So, we have to deal with that and in this case we just take the part of the DOM, like
+Dialogue: 0,0:21:46.00,0:21:51.00,CHS,,0,0,0,,光标周围的块元素，重新解析它们，根据我们 \N {\rENG} the block elements around the cursor, reparse those, div those with our understanding of
+Dialogue: 0,0:21:51.00,0:21:57.00,CHS,,0,0,0,,对文档的这些部分的外观的理解来划分它们并进行更改 从那开始，幸运的是， \N {\rENG} what those parts of that document look like and arrive at change from that, fortunately
+Dialogue: 0,0:21:57.00,0:22:04.00,CHS,,0,0,0,,我只是在简单的文本更改中遇到了这个问题，并且派生一个简单的文本 \N {\rENG} I've only run into this problem for simple textual changes and deriving a simple text
 Dialogue: 0,0:22:04.00,0:22:13.00,CHS,,0,0,0,,更改是安全的，那里不会发生任何奇怪的事情，到目前为止这运作良好我仍然希望 \N {\rENG} change is safe, nothing weird can happen there,so far this is working well I'm still expecting
-Dialogue: 0,0:22:13.00,0:22:17.00,CHS,,0,0,0,,在某个时候遇到更多问题 这里。 \N {\rENG} at some point to run into more problems here.
-Dialogue: 0,0:22:17.00,0:22:28.00,CHS,,0,0,0,,因此，让所有这些持久对象以一种很好的价值方式表示一切，我们可以定义 \N {\rENG} So, having all these persistent objects representingeverything in a nice value way, we can define
-Dialogue: 0,0:22:28.00,0:22:36.00,CHS,,0,0,0,,一种更改代数，基本操作是将更改应用于文档。 \N {\rENG} a kind of algebra of changes, the basic operationis applying the change to a document.
-Dialogue: 0,0:22:36.00,0:22:41.00,CHS,,0,0,0,,在这里，我们有一个蓝色的东西代表一个文档，一个橙色的东西代表一个变化，我们应用 \N {\rENG} Here we have a blue thing for a document andan orange thing for a change and we apply
-Dialogue: 0,0:22:41.00,0:22:48.00,CHS,,0,0,0,,它来获取一个新的文档，在这种情况下，我们删除字符集 2 和 8 之间的第 0 段中的部分 \N {\rENG} that getting a new document, in this casewe delete the part in 0 paragraph between
-Dialogue: 0,0:22:48.00,0:22:58.00,CHS,,0,0,0,,，我们得到一个新的文档对象和 也是一张地图。 \N {\rENG} character off set 2 and 8, we get a new documentobject and also a map.
-Dialogue: 0,0:22:58.00,0:23:06.00,CHS,,0,0,0,,地图是位置地图，它是一种将文档更改前版本中的 \N {\rENG} A map is a position map, it's a way to associatepositions in the pre-change version of the
-Dialogue: 0,0:23:06.00,0:23:11.00,CHS,,0,0,0,,位置与更改后文档中的位置相关联的方法，在这种情况下，我们可以查询此地图 \N {\rENG} document with positions in the post changedocument, in this case we can query this map
-Dialogue: 0,0:23:11.00,0:23:18.00,CHS,,0,0,0,,以询问光标在第一段中位置 11 的位置 旧文档， \N {\rENG} to ask cursor position in the first paragraphat position 11 in the old document, where
+Dialogue: 0,0:22:13.00,0:22:17.00,CHS,,0,0,0,,在某个时候在这里遇到更多问题。 \N {\rENG} at some point to run into more problems here.
+Dialogue: 0,0:22:17.00,0:22:28.00,CHS,,0,0,0,,因此，让所有这些持久对象以一种很好的方式表示一切，我们可以定义 \N {\rENG} So, having all these persistent objects representing everything in a nice value way, we can define
+Dialogue: 0,0:22:28.00,0:22:36.00,CHS,,0,0,0,,一种更改代数，基本操作是将更改应用于文档。 \N {\rENG} a kind of algebra of changes, the basic operation is applying the change to a document.
+Dialogue: 0,0:22:36.00,0:22:41.00,CHS,,0,0,0,,在这里，我们有一个蓝色的东西代表一个文档，一个橙色的东西代表一个改动，我们应用 \N {\rENG} Here we have a blue thing for a document and an orange thing for a change and we apply
+Dialogue: 0,0:22:41.00,0:22:48.00,CHS,,0,0,0,,它来获取一个新的文档，在这里我们删除第 0 段落中偏移值 2 和 8 之间部分 \N {\rENG} that getting a new document, in this case we delete the part in 0 paragraph between
+Dialogue: 0,0:22:48.00,0:22:58.00,CHS,,0,0,0,,我们得到一个新的文档对象和 也是一张地图。 \N {\rENG} character offset 2 and 8, we get a new document object and also a map.
+Dialogue: 0,0:22:58.00,0:23:06.00,CHS,,0,0,0,,地图是位置地图，它是一种将文档更改前版本中的 \N {\rENG} A map is a position map, it's a way to associate positions in the pre-change version of the
+Dialogue: 0,0:23:06.00,0:23:11.00,CHS,,0,0,0,,位置与更改后文档中的位置相关联的方法，在这种情况下，我们可以查询此地图 \N {\rENG} document with positions in the post change document, in this case we can query this map
+Dialogue: 0,0:23:11.00,0:23:18.00,CHS,,0,0,0,,以询问光标在第一段中位置 11 的位置 旧文档， \N {\rENG} to ask cursor position in the first paragraph at position 11 in the old document, where
 Dialogue: 0,0:23:18.00,0:23:19.00,CHS,,0,0,0,,新文档中的这个在哪里。 \N {\rENG} is this in the new document.
-Dialogue: 0,0:23:19.00,0:23:26.00,CHS,,0,0,0,,它会说，“它的位置是 05”，意思是第一个字符中的第五个字符......这 \N {\rENG} It will say, "It's positioned 05", meaningthe fifth character in the first... this is
-Dialogue: 0,0:23:26.00,0:23:31.00,CHS,,0,0,0,,主要用于使光标随着文档的变化而移动，所以它不应该 \N {\rENG} mainly used for making the cursor move asthe document changes, so it shouldn't jump
+Dialogue: 0,0:23:19.00,0:23:26.00,CHS,,0,0,0,,它会说，“它的位置是 0:5”，意思是第一个中的第五个字符......这 \N {\rENG} It will say, "It's positioned 05", meaningthe fifth character in the first... this is
+Dialogue: 0,0:23:26.00,0:23:31.00,CHS,,0,0,0,,主要用于使光标随着文档的变化而移动，所以它不应该 \N {\rENG} mainly used for making the cursor move as the document changes, so it shouldn't jump
 Dialogue: 0,0:23:31.00,0:23:33.00,CHS,,0,0,0,,跳来跳去，而是保持在它的位置。 \N {\rENG} around but stay in its position.
 Dialogue: 0,0:23:33.00,0:23:36.00,CHS,,0,0,0,,你可以 \N {\rENG} There is a bunch of nice things you can
-Dialogue: 0,0:23:36.00,0:23:42.00,CHS,,0,0,0,,用它做很多好事，比如检查你刚刚 \N {\rENG} do with this, like checking pieces of thedocument you just create two positions in
-Dialogue: 0,0:23:42.00,0:23:48.00,CHS,,0,0,0,,在文档中围绕你感兴趣的部分创建两个位置的文档片段，你不断将它们映射到新文档 \N {\rENG} the document around the part you are interestedin, you keep mapping those to the new document
-Dialogue: 0,0:23:48.00,0:23:54.00,CHS,,0,0,0,,，你最终知道在哪里 您正在检查的文本结束了，它 \N {\rENG} and you end up knowing where the text youare checking ended up, it's also essential
-Dialogue: 0,0:23:54.00,0:24:01.00,CHS,,0,0,0,,对于协作编辑也是必不可少的，它允许我们通过映射与更改对象关联的位置 \N {\rENG} for collaborative editing, it allows us bymapping the positions associated with the
-Dialogue: 0,0:24:01.00,0:24:07.00,CHS,,0,0,0,,来将更改从一个文档移动到该文档的另一个版本。 \N {\rENG} change object to move changes from one documentto another version of that document.
-Dialogue: 0,0:24:07.00,0:24:15.00,CHS,,0,0,0,,因此，例如，如果我们在删除操作之外还有另一个更改对象说 \N {\rENG} So, for example, if we had beyond this deleteoperation we had another change object saying,
-Dialogue: 0,0:24:15.00,0:24:25.00,CHS,,0,0,0,,“在位置 11 处插入一个字符”，我们现在可以说相同的更改但应用于 \N {\rENG} "Insert a character at position 11", we cannow say that same change but applied to the
-Dialogue: 0,0:24:25.00,0:24:32.00,CHS,,0,0,0,,第二个文档是，在位置 5 处插入相同的字符 ，因此，如果您 \N {\rENG} second document is, insert the same characterat position 5, so if you have a collaborative
+Dialogue: 0,0:23:36.00,0:23:42.00,CHS,,0,0,0,,用它做很多好事，比如检查你刚刚 \N {\rENG} do with this, like checking pieces of the document you just create two positions in
+Dialogue: 0,0:23:42.00,0:23:48.00,CHS,,0,0,0,,在文档中围绕你感兴趣的部分创建两个位置的文档片段，你不断将它们映射到新文档 \N {\rENG} the document around the part you are interested in, you keep mapping those to the new document
+Dialogue: 0,0:23:48.00,0:23:54.00,CHS,,0,0,0,,你最终知道在哪里 您正在检查的文本结束了，它 \N {\rENG} and you end up knowing where the text you are checking ended up, it's also essential
+Dialogue: 0,0:23:54.00,0:24:01.00,CHS,,0,0,0,,对于协作编辑也是必不可少的，它允许我们通过映射与更改对象关联的位置 \N {\rENG} for collaborative editing, it allows us by mapping the positions associated with the
+Dialogue: 0,0:24:01.00,0:24:07.00,CHS,,0,0,0,,来将更改从一个文档移动到该文档的另一个版本。 \N {\rENG} change object to move changes from one document to another version of that document.
+Dialogue: 0,0:24:07.00,0:24:15.00,CHS,,0,0,0,,因此，例如，如果我们在删除操作之外还有另一个更改对象说 \N {\rENG} So, for example, if we had beyond this delete operation we had another change object saying,
+Dialogue: 0,0:24:15.00,0:24:25.00,CHS,,0,0,0,,“在位置 11 处插入一个字符”，我们现在可以说相同的更改但应用于 \N {\rENG} "Insert a character at position 11", we can now say that same change but applied to the
+Dialogue: 0,0:24:25.00,0:24:32.00,CHS,,0,0,0,,第二个文档是，在位置 5 处插入相同的字符 ，因此，如果您 \N {\rENG} second document is, insert the same character at position 5, so if you have a collaborative
 Dialogue: 0,0:24:32.00,0:24:40.00,CHS,,0,0,0,,设置了协作编辑并且两个用户同时进行，则其中一个最终会先进行， \N {\rENG} editing set up and two users make it concurrently,one of them will end up going first and the
-Dialogue: 0,0:24:40.00,0:24:46.00,CHS,,0,0,0,,另一个将具有他们所做的更改，但他们无法 \N {\rENG} other one will have this change that theyhave made, but that they're not able to apply
-Dialogue: 0,0:24:46.00,0:24:49.00,CHS,,0,0,0,,应用于当前 文件，因为文件在此期间发生了变化。 \N {\rENG} to the current document because the documentchanged in the meantime.
-Dialogue: 0,0:24:49.00,0:24:55.00,CHS,,0,0,0,,他们可以使用这种方法来获取其他用户所做的更改，移动他们自己的更改， \N {\rENG} They can use this approach to take the changethat the other user made, move their own changeover
-Dialogue: 0,0:24:55.00,0:25:01.00,CHS,,0,0,0,,然后应用它并重新尝试将其推送到服务器，所以它有点像，到达 \N {\rENG} it and then apply it and retry pushing itto the server, so it's kind of like, get to
-Dialogue: 0,0:25:01.00,0:25:07.00,CHS,,0,0,0,,基地，你尝试推送，你得到一个 冲突，你尝试在本地rebase，然后你尝试 \N {\rENG} base, you try to push, you get a conflict,you try to rebase locally and then you try
-Dialogue: 0,0:25:07.00,0:25:12.00,CHS,,0,0,0,,再次repush，效果很好，实际上有很多，你可以 \N {\rENG} to repush again, it works quite well, thereis quite a bit to it actually, you can find
-Dialogue: 0,0:25:12.00,0:25:20.00,CHS,,0,0,0,,在我的博客上找到很长的歧视，效果很好，比较简单和可靠 \N {\rENG} a long discrimination on my blog, it worksquite well, it's a relatively simple and solid
+Dialogue: 0,0:24:40.00,0:24:46.00,CHS,,0,0,0,,另一个将具有他们所做的更改，但他们无法 \N {\rENG} other one will have this change that they have made, but that they're not able to apply
+Dialogue: 0,0:24:46.00,0:24:49.00,CHS,,0,0,0,,应用于当前文档，因为文档在此期间发生了变化。 \N {\rENG} to the current document because the document changed in the meantime.
+Dialogue: 0,0:24:49.00,0:24:55.00,CHS,,0,0,0,,他们可以使用这种方法来获取其他用户所做的更改，移动他们自己的更改， \N {\rENG} They can use this approach to take the change that the other user made, move their own changeover
+Dialogue: 0,0:24:55.00,0:25:01.00,CHS,,0,0,0,,然后应用它并重新尝试将其推送到服务器，所以它有点像 Git rebase \N {\rENG} it and then apply it and retry pushing it to the server, so it's kind of like Git rebase
+Dialogue: 0,0:25:01.00,0:25:07.00,CHS,,0,0,0,,你尝试推送，你得到一个 冲突，你尝试在本地rebase，然后你尝试 \N {\rENG} you try to push, you get a conflict, you try to rebase locally and then you try
+Dialogue: 0,0:25:07.00,0:25:12.00,CHS,,0,0,0,,再次 push，效果很好，实际上有很多，你可以 \N {\rENG} to push again, it works quite well, there is quite a bit to it actually, you can find
+Dialogue: 0,0:25:12.00,0:25:20.00,CHS,,0,0,0,,在我的博客上找到很长的说明，效果很好，这是比较简单和可靠 \N {\rENG} a long description on my blog, it worksquite well, it's a relatively simple and solid
 Dialogue: 0,0:25:20.00,0:25:21.00,CHS,,0,0,0,,进行协作编辑的方式。 \N {\rENG} way to do collaborative editing.
-Dialogue: 0,0:25:21.00,0:25:28.00,CHS,,0,0,0,,这有更多的应用，比如更改跟踪，如果您只是保留所有更改的历史记录 \N {\rENG} There is more applications of this, say changetracking, if you just keep a history of all
-Dialogue: 0,0:25:28.00,0:25:32.00,CHS,,0,0,0,,，您总是可以找出文档的来源， \N {\rENG} your changes, you can always find out wherea piece of the document originated, stuff
+Dialogue: 0,0:25:21.00,0:25:28.00,CHS,,0,0,0,,这有更多的应用，比如更改跟踪，如果您只是保留所有更改的历史记录 \N {\rENG} There is more applications of this, say change tracking, if you just keep a history of all
+Dialogue: 0,0:25:28.00,0:25:32.00,CHS,,0,0,0,,您总是可以找出文档的来源， \N {\rENG} your changes, you can always find out wherea piece of the document originated, stuff
 Dialogue: 0,0:25:32.00,0:25:34.00,CHS,,0,0,0,,诸如此类。 \N {\rENG} like that.
-Dialogue: 0,0:25:34.00,0:25:40.00,CHS,,0,0,0,,我敢肯定还有更多，我们还没有真正探索到这一步，但这是一个不错的 \N {\rENG} I'm sure there is more, we haven't reallyexplored this far yet, but it's a nice place
-Dialogue: 0,0:25:40.00,0:25:42.00,CHS,,0,0,0,,地方，很好的基础。 \N {\rENG} to, nice basis to build on.
+Dialogue: 0,0:25:34.00,0:25:40.00,CHS,,0,0,0,,我敢肯定还有更多，我们还没有真正探索到这一步，但这是一个不错的 \N {\rENG} I'm sure there is more, we haven't really explored this far yet, but it's a nice place
+Dialogue: 0,0:25:40.00,0:25:42.00,CHS,,0,0,0,,东西 \N {\rENG} to build them.
 Dialogue: 0,0:25:42.00,0:25:47.00,CHS,,0,0,0,,然后我想，很简单的谈一下未来。 \N {\rENG} Then I want to, very briefly talk about thefuture.
-Dialogue: 0,0:25:47.00,0:25:55.00,CHS,,0,0,0,,因此，W 3 C 正在对此 contentEditable 标准进行更新，这将允许 \N {\rENG} So, the W 3 C is working on an update to thiscontentEditable standard which would allow
+Dialogue: 0,0:25:47.00,0:25:55.00,CHS,,0,0,0,,因此，W3C 正在对此 contentEditable 标准进行更新，这将允许 \N {\rENG} So, the W3C is working on an update to this contentEditable standard which would allow
 Dialogue: 0,0:25:55.00,0:26:01.00,CHS,,0,0,0,,一种新的 contentEditable 模式，您应该这样做， \N {\rENG} a new mode of contentEditable, where you aresupposed to do exactly this, the document
-Dialogue: 0,0:26:01.00,0:26:08.00,CHS,,0,0,0,,文档不可编辑，您应该捕获事件并编辑库存 你自己，那么 \N {\rENG} isn't editable, you are supposed to captureevents and edit the inventory yourself, then
-Dialogue: 0,0:26:08.00,0:26:12.00,CHS,,0,0,0,,他们还必须为 \N {\rENG} they will also have to define a few more eventsfor stuff like the spell checking issue that
+Dialogue: 0,0:26:01.00,0:26:08.00,CHS,,0,0,0,,文档不可编辑，您应该捕获事件并自己实现编辑器，那么 \N {\rENG} isn't editable, you are supposed to capture events and implement the editor yourself, then
+Dialogue: 0,0:26:08.00,0:26:12.00,CHS,,0,0,0,,他们还必须为 \N {\rENG} they will also have to define a few more events for stuff like the spell checking issue that
 Dialogue: 0,0:26:12.00,0:26:20.00,CHS,,0,0,0,,我之前展示的拼写检查问题和更多类似的东西定义更多事件，但是是的，那会很好，因为它 \N {\rENG} I showed before and a bunch more like this,but yeah, that would be nice because it relives
-Dialogue: 0,0:26:20.00,0:26:28.00,CHS,,0,0,0,,让浏览器供应商重新维护了整个可怕的 blob 代码，它让编辑器 \N {\rENG} the browser vendors of maintaining this wholehorrible blob of code and it gives editor
-Dialogue: 0,0:26:28.00,0:26:34.00,CHS,,0,0,0,,实现者了解如何实现一个健壮的实体编辑器，而不会 \N {\rENG} implementers a view of how to implement arobust solid editor, without going insane
+Dialogue: 0,0:26:20.00,0:26:28.00,CHS,,0,0,0,,让浏览器供应商重新维护了整个可怕的代码，它让编辑器 \N {\rENG} the browser vendors of maintaining this whole horrible blob of code and it gives editor
+Dialogue: 0,0:26:28.00,0:26:34.00,CHS,,0,0,0,,实现者了解如何实现一个健壮的实体编辑器，而不会 \N {\rENG} implementers a view of how to implement a robust solid editor, without going insane
 Dialogue: 0,0:26:34.00,0:26:37.00,CHS,,0,0,0,,在这个过程中发疯。 \N {\rENG} in the process.
-Dialogue: 0,0:26:37.00,0:26:42.00,CHS,,0,0,0,,当然，你永远不知道 W 3 C 标准什么时候会真正出现在浏览器中，但 \N {\rENG} Of course, you never know when W 3 C standardwill actually end up in browsers, but I'm
-Dialogue: 0,0:26:42.00,0:26:46.00,CHS,,0,0,0,,我听说浏览器对此很感兴趣，可能出于我提到的原因， \N {\rENG} told that browsers are enthusiastic aboutthis, probably for the reasons I mentioned,
-Dialogue: 0,0:26:46.00,0:26:51.00,CHS,,0,0,0,,它可能会发生，但规范还没有完成 然而，这可能会很 \N {\rENG} it will probably be happening, but the specificationisn't finished yet, it will probably be a
+Dialogue: 0,0:26:37.00,0:26:42.00,CHS,,0,0,0,,当然，你永远不知道 W3C 标准什么时候会真正出现在浏览器中，但 \N {\rENG} Of course, you never know when W3C standard will actually end up in browsers, but I'm
+Dialogue: 0,0:26:42.00,0:26:46.00,CHS,,0,0,0,,我听说浏览器对此很感兴趣，可能出于我提到的原因， \N {\rENG} told that browsers are enthusiastic about this, probably for the reasons I mentioned,
+Dialogue: 0,0:26:46.00,0:26:51.00,CHS,,0,0,0,,可能正在进行中，但规范还没有完成 然而，这可能会很 \N {\rENG} it will probably be happening, but the specification isn't finished yet, it will probably be a
 Dialogue: 0,0:26:51.00,0:26:53.00,CHS,,0,0,0,,长一段时间。 \N {\rENG} long time.
-Dialogue: 0,0:26:53.00,0:27:00.00,CHS,,0,0,0,,这是 URL，ProseMirror.net 和Github.com/ProseMirror。 \N {\rENG} This is the URLs, the ProseMirror.net andGithub.com/ProseMirror.
-Dialogue: 0,0:27:00.00,0:27:11.00,CHS,,0,0,0,,随意使用它，它还没有完成，但它可以按原样工作，主要 \N {\rENG} Feel free to play with it, it's not finishedyet but it works as it is, the major big thing
-Dialogue: 0,0:27:11.00,0:27:18.00,CHS,,0,0,0,,需要改进的是 API 或语言，用于定义您自己的文档方案 \N {\rENG} that has to improve is the API or languagefor defining your own document schemers and
-Dialogue: 0,0:27:18.00,0:27:24.00,CHS,,0,0,0,,并灵活处理您在文档中可能需要的所有内容 策划者。 \N {\rENG} having flexible for all the things you mightwant in your document schemer.
-Dialogue: 0,0:27:24.00,0:27:31.00,CHS,,0,0,0,,我们将于周一在柏林就这个项目举行一次见面会，如果您认为您 \N {\rENG} We are having a meet up on Monday around thisproject here in Berlin, if you think you might
-Dialogue: 0,0:27:31.00,0:27:38.00,CHS,,0,0,0,,可能感兴趣，请前往讨论。ProseMirror.net，一个讨论论坛，其中一个主题是 \N {\rENG} be interested, go to discuss.ProseMirror.net,a discussion forum and one of the topics is
+Dialogue: 0,0:26:53.00,0:27:00.00,CHS,,0,0,0,,这是 URL，ProseMirror.net 和 github.com/ProseMirror。 \N {\rENG} This is the URLs, the ProseMirror.net and github.com/ProseMirror.
+Dialogue: 0,0:27:00.00,0:27:11.00,CHS,,0,0,0,,随便使用它，它还没有完成，但它可以正常工作，主要 \N {\rENG} Feel free to play with it, it's not finishedyet but it works as it is, the major big thing
+Dialogue: 0,0:27:11.00,0:27:18.00,CHS,,0,0,0,,需要改进的是 API 或语言，用于定义您自己的文档范式 \N {\rENG} that has to improve is the API or language for defining your own document schema and
+Dialogue: 0,0:27:18.00,0:27:24.00,CHS,,0,0,0,,并灵活处理您在文档中可能需要的所有东西。 \N {\rENG} having flexible for all the things you might want in your document schema.
+Dialogue: 0,0:27:24.00,0:27:31.00,CHS,,0,0,0,,我们将于周一在柏林就这个项目举行一次见面会，如果您认为您 \N {\rENG} We are having a meet up on Monday around this project here in Berlin, if you think you might
+Dialogue: 0,0:27:31.00,0:27:38.00,CHS,,0,0,0,,可能感兴趣，请前往讨论。ProseMirror.net，一个讨论论坛，其中一个主题是 \N {\rENG} be interested, go to discuss. ProseMirror.net, a discussion forum and one of the topics is
 Dialogue: 0,0:27:38.00,0:27:39.00,CHS,,0,0,0,,这次 \N {\rENG} this
-Dialogue: 0,0:27:39.00,0:27:42.00,CHS,,0,0,0,,见面，欢迎您申请 出色地。 \N {\rENG} meet up, you are welcome to apply as well.
-Dialogue: 0,0:27:42.00,9:00:00.00,CHS,,0,0,0,,就是这样，谢谢你的收听。 \N {\rENG} That's it, thank you for listening.
+Dialogue: 0,0:27:39.00,0:27:42.00,CHS,,0,0,0,,见面，欢迎大家参与 \N {\rENG} meet up, you are welcome to apply as well.
+Dialogue: 0,0:27:42.10,0:27:44.64,CHS,,0,0,0,,就这样，谢谢你的收听。 \N {\rENG} That's it, thank you for listening.
+Dialogue: 0,0:00:00.00,0:27:50.12,CHS,,0,0,0,,{\fs50\b1\pos(188.8,87.6)}字幕：@小红马里奥
